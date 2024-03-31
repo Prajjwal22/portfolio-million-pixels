@@ -10,14 +10,14 @@ export default function Creator() {
         <span className="text-xl md:text-2xl font-bold text-left">
           I am Vishal Khandelwal
         </span>
-        <p>
+        <p className="text-sm md:text-base">
           Throughout my career, I have always tried to ensure that the passion
           and enthusiasm for my work has shone through. Despite my success as an
           independent designer, I have found that it is through a team that I
           have achieved my greatest potential. I have learnt that having a
           platform to question and develop ideas harnesses greater creativity.
         </p>
-        <p>
+        <p className="text-sm md:text-base">
           Although realising creative inspiration doesn&apos;t come without its
           obstacles! Time management and working to tight deadlines are
           important in any industry, but the foundations and biggest challenges
