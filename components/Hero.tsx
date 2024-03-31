@@ -56,6 +56,7 @@ export default function Hero() {
           width={1000}
           height={1000}
           alt="Vishal"
+          priority
         />
       </div>
       <Image
@@ -64,6 +65,7 @@ export default function Hero() {
         width={2000}
         height={1000}
         alt="Herwave"
+        priority
       />
     </section>
   );
