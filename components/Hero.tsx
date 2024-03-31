@@ -5,7 +5,7 @@ import TypeWriter from "./TypeWriter";
 
 export default function Hero() {
   return (
-    <section className="relative md:h-[calc(100dvh-150px)] h-[calc(100dvh-300px)] overflow-hidden md:mt-14 ">
+    <section className="relative md:h-[calc(100dvh-150px)] h-[600px] overflow-hidden md:mt-14 ">
       <div className="max-w-5xl m-auto flex flex-col md:flex-row md:items-start items-center justify-between p-2">
         <div className="flex flex-col gap-5 md:mt-10 md:items-start items-center">
           <h1 className="text-primary uppercase text-4xl md:text-left text-center md:text-7xl font-semibold">
