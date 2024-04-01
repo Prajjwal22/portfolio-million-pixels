@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <ScrollObserver>
       <html lang="en">
-        <body className={`${poppins.className} antialiased`}>
+        <body className={`${poppins.className}  scroll-smooth antialiased`}>
           <Providers>
             <Header />
             {children}

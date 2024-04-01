@@ -1,6 +1,7 @@
 import Creator from "@/components/Creator";
 import Expertise from "@/components/Expertise";
 import Hero from "@/components/Hero";
+import Showcase from "@/components/Showcase";
 import { Parallax } from "react-scroll-parallax";
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
       <Hero />
       <Creator />
       <Expertise />
-      <Creator />
+      <Showcase />
     </main>
   );
 }

@@ -41,3 +41,19 @@ body {
 .expertiseText {
   transition: opacity 0.4s;
 }
+
+.sectionDiv:nth-child(2) {
+  top: -100vh
+}
+
+.sectionDiv:nth-child(3) {
+  top: -200vh
+}
+
+.sectionDiv:nth-child(4) {
+  top: -300vh
+}
+
+.innerCard {
+  will-change: filter, transform;
+}

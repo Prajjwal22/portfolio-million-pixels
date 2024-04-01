@@ -1,11 +1,10 @@
 "use client";
-import React, { useState, useEffect, useRef, useContext } from "react";
+import React, { useRef, useContext } from "react";
 import { scrollContext } from "@/contexts/ScrollContext";
 
 const opacityForBlock = (sectionProgress: number, blockNo: number) => {
   const progress = sectionProgress - blockNo;
-  console.log(progress);
-  if (progress >= 0 && progress < 1) {
+  if (progress >= 0) {
     return 1;
   } else {
     return 0.2;
@@ -35,7 +34,7 @@ export default function Expertise() {
   return (
     <section ref={sectionRef} className="bg-primary w-full p-2">
       <div className=" max-w-5xl tracking-tight m-auto flex flex-col justify-center gap-8 text-white mt-16">
-        <h2 className="font-bold md:text-5xl text-center md:mb-5">
+        <h2 className="font-bold md:text-3xl text-center md:mb-5">
           Expertise Unleashed
         </h2>
         <div className="text-white uppercase font-bold text-3xl md:text-7xl flex flex-col items-center gap-10 font-bebas">
