@@ -51,7 +51,11 @@ body {
 }
 
 .sectionDiv:nth-child(4) {
-  top: -300vh
+  top: -300vh;
+}
+
+.sectionDiv:nth-last-child() {
+  height: 100vh;
 }
 
 .innerCard {

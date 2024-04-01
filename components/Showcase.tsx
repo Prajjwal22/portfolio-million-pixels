@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import ProjectCard from "./ProjectCard";
+import Button from "./Button";
 
 export default function Showcase() {
   useEffect(() => {
@@ -36,11 +37,11 @@ export default function Showcase() {
 
   return (
     <section className="bg-primary w-full p-2">
-      <div className=" max-w-7xl tracking-tight m-auto flex flex-col justify-center gap-8 mt-16">
+      <div className=" max-w-7xl tracking-tight m-auto flex flex-col justify-center gap-8 my-16">
         <h2 className="   text-white font-bold md:text-3xl text-center md:mb-5">
           Creative Showcase
         </h2>
-        <div>
+        <div className="h-[500vh] bg-primary">
           <div className="relative h-[200vh] w-full sectionDiv">
             <div className="innerCard sticky w-full h-screen top-0 p-3 md:p-10 will-change-filter">
               <ProjectCard title="Graphic Design" image="/work.png" />
@@ -61,6 +62,9 @@ export default function Showcase() {
               <ProjectCard title="Character Designing" image="/work2.png" />
             </div>
           </div>
+        </div>
+        <div className="m-auto">
+          <Button title="Download Porfolio " variant="outlined" />
         </div>
       </div>
     </section>
