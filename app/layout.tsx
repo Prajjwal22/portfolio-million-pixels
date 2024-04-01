@@ -3,8 +3,10 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import { ScrollObserver } from "@/contexts/ScrollContext";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
+// const bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,13 +19,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${poppins.className} antialiased`}>
-        <Providers>
-          <Header />
-          {children}
-        </Providers>
-      </body>
-    </html>
+    <ScrollObserver>
+      <html lang="en">
+        <body className={`${poppins.className} antialiased`}>
+          <Providers>
+            <Header />
+            {children}
+          </Providers>
+        </body>
+      </html>
+    </ScrollObserver>
   );
 }

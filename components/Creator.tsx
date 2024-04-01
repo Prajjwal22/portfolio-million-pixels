@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 export default function Creator() {
   return (
@@ -25,6 +26,9 @@ export default function Creator() {
           challenges and used them to fuel my ambition and maintain my own high
           standards.
         </p>
+        <span className="text-center">
+          <Button title="Work With Me" variant="outlined" />
+        </span>
       </div>
     </section>
   );
