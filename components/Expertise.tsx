@@ -32,7 +32,7 @@ export default function Expertise() {
   }
 
   return (
-    <section ref={sectionRef} className="bg-primary w-full p-2">
+    <section ref={sectionRef} className="bg-primary w-full p-2 z-10">
       <div className=" max-w-5xl tracking-tight m-auto flex flex-col justify-center gap-8 text-white mt-16">
         <h2 className="font-bold md:text-3xl text-center md:mb-5">
           Expertise Unleashed

@@ -12,7 +12,7 @@ export default function Summary() {
     }
   }, []);
   return (
-    <section className="bg-white  w-screen p-2">
+    <section className="bg-white  w-screen p-2 z-10">
       <div className=" max-w-5xl tracking-tight m-auto flex flex-col justify-center gap-8 mt-16">
         <h2 className="   text-primary font-bold md:text-3xl text-center md:mb-5">
           Professional Journey
