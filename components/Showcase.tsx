@@ -5,35 +5,35 @@ import ProjectCard from "./ProjectCard";
 import Button from "./Button";
 
 export default function Showcase() {
-  // useEffect(() => {
-  //   let stickySections = [
-  //     ...document.querySelectorAll<HTMLElement>(".innerCard"),
-  //   ];
-  //   console.log(stickySections);
-  //   function animate() {
-  //     console.log("prajjwal");
-  //     for (let i = 0; i < stickySections.length; i++) {
-  //       let { top } = stickySections[
-  //         i
-  //       ].parentElement?.getBoundingClientRect() || { top: 0 };
-  //       let transTop = top > 0 ? 0 : top * -1;
-  //       if (transTop >= 1000) transTop = 1000;
+  useEffect(() => {
+    let stickySections = [
+      ...document.querySelectorAll<HTMLElement>(".innerCard"),
+    ];
+    console.log(stickySections);
+    function animate() {
+      console.log("prajjwal");
+      for (let i = 0; i < stickySections.length; i++) {
+        let { top } = stickySections[
+          i
+        ].parentElement?.getBoundingClientRect() || { top: 0 };
+        let transTop = top > 0 ? 0 : top * -1;
+        if (transTop >= 1000) transTop = 1000;
 
-  //       if (top <= 0 && i !== stickySections.length - 1) {
-  //         stickySections[i].style.transform = `scale3d(${
-  //           1 - transTop * 0.001
-  //         }, ${1 - transTop * 0.001},1)`;
-  //         stickySections[i].style.filter = `blur(${0 + transTop * 0.02}px)`;
-  //         stickySections[i].style.opacity = `${1 - transTop * 0.0015}`;
-  //       }
-  //     }
-  //   }
+        if (top <= 0 && i !== stickySections.length - 1) {
+          stickySections[i].style.transform = `scale3d(${
+            1 - transTop * 0.001
+          }, ${1 - transTop * 0.001},1)`;
+          stickySections[i].style.filter = `blur(${0 + transTop * 0.02}px)`;
+          stickySections[i].style.opacity = `${1 - transTop * 0.0015}`;
+        }
+      }
+    }
 
-  //   window.addEventListener("scroll", animate);
-  //   return () => {
-  //     window.removeEventListener("scroll", animate);
-  //   };
-  // }, []);
+    window.addEventListener("scroll", animate);
+    return () => {
+      window.removeEventListener("scroll", animate);
+    };
+  }, []);
 
   return (
     <section className="bg-primary w-full p-2">

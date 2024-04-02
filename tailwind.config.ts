@@ -24,7 +24,8 @@ const config: Config = {
         "primary":"#252525"
       },
       colors:{
-        "primary":"#1C1C1C"
+        "primary":"#1C1C1C",
+        "mute":"#BFBFBF"
       },
     },
   },
