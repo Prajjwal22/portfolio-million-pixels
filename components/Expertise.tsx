@@ -34,10 +34,10 @@ export default function Expertise() {
   return (
     <section ref={sectionRef} className="bg-primary w-full p-2 z-10">
       <div className=" max-w-5xl tracking-tight m-auto flex flex-col justify-center gap-8 text-white mt-16">
-        <h2 className="font-bold md:text-3xl text-center md:mb-5">
+        <h2 className="font-bold md:text-3xl text-center md:mb-12">
           Expertise Unleashed
         </h2>
-        <div className="text-white uppercase font-bold text-3xl md:text-7xl flex flex-col items-center gap-10 font-bebas">
+        <div className="text-white uppercase font-bold text-3xl md:text-8xl flex flex-col items-center gap-20 font-bebas">
           <span
             style={{ opacity: opacityForBlock(progress, 0) }}
             className="expertiseText"
