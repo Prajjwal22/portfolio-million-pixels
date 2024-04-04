@@ -58,7 +58,7 @@ export default function Timeline({ showMore, data }: timeLineProps) {
             {data
               .filter((item) => !item.isCurrent)
               .map((item) => (
-                <div className="flex flex-col gap-4 before:h-3 before:w-3 text-mute before:bg-mute md:before:inline-flex before:items-center before:hidden before:mt-3 before:rounded-full before:absolute before:-left-2">
+                <div key={item.id} className="flex flex-col gap-4 before:h-3 before:w-3 text-mute before:bg-mute md:before:inline-flex before:items-center before:hidden before:mt-3 before:rounded-full before:absolute before:-left-2">
                   <div className="flex flex-col md:flex-row justify-between md:before:block before:hidden before:w-1 before:top-3 before:bg-black before:h-20 before:absolute before:-left-1">
                     <span className=" md:text-3xl text-2xl font-semibold">
                       {item.designation}
