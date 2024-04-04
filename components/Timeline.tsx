@@ -23,7 +23,7 @@ export default function Timeline({ showMore, data }: timeLineProps) {
         {data
           .filter((item) => item.isCurrent)
           .map((data) => (
-            <div
+            <div key={data.id}
               className={`flex flex-col gap-4 before:h-3 before:w-3 before:${
                 data.isCurrent ? "bg-black" : "bg-mute"
               } md:before:inline-flex before:datas-center before:hidden before:mt-3 before:rounded-full before:absolute before:-left-2`}
@@ -53,7 +53,7 @@ export default function Timeline({ showMore, data }: timeLineProps) {
           ))}
 
         {/* Rest Expereince */}
-        
+
         {showMore && (
           <>
             {data
