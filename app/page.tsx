@@ -16,6 +16,12 @@ export default function Home() {
       <Showcase />
       <Summary />
       <Skills />
+      <Creator />
+
+      <Creator />
+      <Creator />
+      <Creator />
+
     </main>
   );
 }
