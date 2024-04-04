@@ -53,6 +53,7 @@ export default function Timeline({ showMore, data }: timeLineProps) {
           ))}
 
         {/* Rest Expereince */}
+        
         {showMore && (
           <>
             {data
