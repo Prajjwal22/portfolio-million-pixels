@@ -1,22 +1,35 @@
+import Image from "next/image";
 import React from "react";
 
 type buttonProps = {
   title: string;
   variant: string;
+  icon?: string;
 };
 
-export default function Button({ title, variant }: buttonProps) {
+export default function Button({ title, variant, icon }: buttonProps) {
   return (
-    <button
-      className={`md:h-16 md:w-52 h-12 w-44 rounded-full ${
+    <div
+      className={`md:h-16 ${icon ? "md:min-w-60 " :"md:min-w-52"} h-12 w-44 flex items-center justify-center cursor-pointer rounded-full ${
         variant === "solid"
-          ? "bg-primary text-white"
+          ? "bg-primary text-secondary"
           : variant === "outlined"
-          ? "text-white border-white border b-2"
+          ? "text-secondary border-white border b-2"
           : "bg-transparent text-primary border-primary b-2 border"
       }`}
     >
-      {title}
-    </button>
+      <span className="flex items-center">
+        {title}
+        {icon && (
+          <Image
+            src={icon}
+            width={50}
+            height={50}
+            className="max-w-7 ml-2"
+            alt="donwload"
+          />
+        )}
+      </span>
+    </div>
   );
 }

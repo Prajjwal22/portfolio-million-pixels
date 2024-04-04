@@ -15,7 +15,7 @@ export default function ProjectCard({ image, title }: projectCardProps) {
         height={2000}
         alt="work"
       />
-      <span className="absolute text-white md:text-4xl text-2xl m-auto font-bold bottom-0 md:right-0 p-10 inline-flex items-center gap-3">
+      <span className="absolute text-secondary md:text-4xl text-2xl m-auto font-bold bottom-0 md:right-0 p-10 inline-flex items-center gap-3">
         {title}{" "}
         <Image
           className="max-w-12"

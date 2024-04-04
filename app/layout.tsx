@@ -5,7 +5,10 @@ import "./globals.css";
 import { Providers } from "./providers";
 import { ScrollObserver } from "@/contexts/ScrollContext";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 // const bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {

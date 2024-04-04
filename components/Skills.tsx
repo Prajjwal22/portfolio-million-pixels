@@ -17,8 +17,6 @@ export default function Skills() {
     () => {
       const { current: children } = scrollRef;
       const cards = gsap.utils.toArray(children) as HTMLElement[];
-      console.log(cards);
-
       cards.forEach((card) => {
         gsap.to(card, {
           x: -250,
@@ -39,7 +37,6 @@ export default function Skills() {
     () => {
       const { current: children } = scrollRef1;
       const cards = gsap.utils.toArray(children) as HTMLElement[];
-      console.log(cards);
 
       cards.forEach((card) => {
         gsap.to(card, {
@@ -81,7 +78,7 @@ export default function Skills() {
             </div>
           ))}
         </div>
-        <Button title="Download Portfolio" variant="outline" />
+        <Button title="Download My Resume" icon="/download.png" variant="outline" />
       </div>
     </section>
   );

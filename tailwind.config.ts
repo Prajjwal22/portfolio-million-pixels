@@ -28,7 +28,8 @@ const config: Config = {
       },
       colors:{
         "primary":"#1C1C1C",
-        "mute":"#BFBFBF"
+        "mute":"#BFBFBF",
+        "secondary":"#EFEFEF"
       },
     },
   },

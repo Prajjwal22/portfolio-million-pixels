@@ -9,7 +9,6 @@ export default function Showcase() {
     let stickySections = [
       ...document.querySelectorAll<HTMLElement>(".innerCard"),
     ];
-    console.log(stickySections);
     function animate() {
       console.log("prajjwal");
       for (let i = 0; i < stickySections.length; i++) {
@@ -38,7 +37,7 @@ export default function Showcase() {
   return (
     <section className="bg-primary w-full p-2 z-10">
       <div className=" max-w-7xl tracking-tight m-auto flex flex-col justify-center gap-8 my-16">
-        <h2 className="   text-white font-bold md:text-3xl text-center md:mb-5">
+        <h2 className="   text-secondary font-bold md:text-3xl text-center md:mb-5">
           Creative Showcase
         </h2>
         <div className="h-[500vh] bg-primary">

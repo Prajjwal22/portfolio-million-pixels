@@ -8,8 +8,9 @@ import Expereince from "../data/expereince.json";
 import educationData from "../data/educationdata.json";
 
 export default function Summary() {
-  console.log(educationData.forEach((item) => console.log(item)));
   const [showMore, setShowMore] = useState(false);
+  const [showEdu, setShowEdu] = useState(false);
+
 
   useEffect(() => {
     if (window.innerWidth > 420) {
@@ -26,7 +27,7 @@ export default function Summary() {
         <div className="relative">
           <div className="flex justify-between items-center ">
             <span className="absolute md:hidden bottom-0 w-screen -left-2 h-0.5 bg-mute"></span>
-            <span className="md:h-16 flex md:text-xl text-sm items-center justify-center md:w-52 h-10 w-28 rounded-full bg-primary text-white">
+            <span className="md:h-16 flex md:text-xl text-sm items-center justify-center md:w-52 h-10 w-28 rounded-full bg-primary text-secondary">
               Experience
             </span>
             <span
@@ -42,10 +43,17 @@ export default function Summary() {
         <div className="relative">
           <span className="absolute md:hidden bottom-0 w-screen -left-2 h-0.5 bg-mute"></span>
 
-          <span className="md:h-16 flex md:text-xl text-sm items-center justify-center md:w-52 h-10 w-28 rounded-full bg-primary text-white">
+          <span className="md:h-16 flex md:text-xl text-sm items-center justify-center md:w-52 h-10 w-28 rounded-full bg-primary text-secondary">
             Education
           </span>
-          <Education educationData={educationData} showMore={showMore} />
+          <span
+              onClick={() => setShowEdu(!showEdu)}
+              className="text-xs md:hidden"
+            >
+              Show {showMore ? "Less" : "More"}{" "}
+              <span className="md:hidden rotate-90">&gt;</span>
+            </span>
+          <Education educationData={educationData} showEdu={showEdu} />
         </div>
       </div>
     </section>

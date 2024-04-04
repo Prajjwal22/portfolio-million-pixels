@@ -6,12 +6,12 @@ type Education = {
 };
 
 type EducationeProps = {
-  showMore: boolean;
+  showEdu: boolean;
   educationData: Education[];
 };
 
 export default function Education({
-  showMore,
+  showEdu,
   educationData,
 }: EducationeProps) {
   return (
@@ -36,7 +36,7 @@ export default function Education({
         </div>
 
         {/* Rest Expereince */}
-        {showMore && (
+        {showEdu && (
           <>
             {educationData.slice(1).map((item) => (
               <div key={item.id} className="flex flex-col gap-4 before:h-3 before:w-3 text-mute before:bg-mute md:before:inline-flex before:items-center before:hidden before:mt-3 before:rounded-full before:absolute before:-left-2">
