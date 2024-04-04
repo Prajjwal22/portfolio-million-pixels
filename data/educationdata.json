@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "standard": "High School",
+    "institution": "Hartmann College, Bareilly",
+    "year": "2010"
+  },
+  {
+    "id": 2,
+    "standard": "Intermediate",
+    "institution": "Hartmann College, Bareilly",
+    "year": "2012"
+  },
+  {
+    "id": 3,
+    "standard": "Bachelors of Fine Arts, (Applied Art)",
+    "institution": "Lalit Kala Sansthan, Dr. B.R.A. University, Agra.",
+    "year": "2012 - 2016"
+  },
+  {
+    "id": 4,
+    "standard": "Masters of Fine Arts, (Applied Art)",
+    "institution": "Lalit Kala Sansthan, Dr. B.R.A. University, Agra.",
+    "year": "2016 - 2018"
+  }
+]

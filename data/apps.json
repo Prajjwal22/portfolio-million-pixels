@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "icon": "/ps.png",
+    "name": "Adobe Photoshop"
+  },
+
+  { "id": 2, "icon": "/ai.png", "name": "Adobe Illustrator" },
+  { "id": 3, "icon": "/pr.png", "name": "Adobe Premier Pro" },
+
+  { "id": 3, "icon": "/id.png", "name": "Adobe InDesign" },
+  {
+    "id": 4,
+    "icon": "/ae.png",
+    "name": "Adobe Aftereffect"
+  },
+  {
+    "id": 5,
+    "icon": "/ps.png",
+    "name": "Adobe Photoshop"
+  }
+]

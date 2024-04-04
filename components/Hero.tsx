@@ -11,7 +11,7 @@ export default function Hero() {
     <section className="relative md:h-[calc(100dvh-150px)] h-[600px] overflow-hidden md:mt-14 ">
       {/* <Parallax speed={10}> */}
       <div className="fixed left-0 right-0 z-0 top-30 h-screen">
-        <div className="max-w-5xl m-auto flex flex-col md:flex-row md:items-start items-center justify-between p-2 ">
+        <div className="max-w-6xl m-auto flex flex-col md:flex-row md:items-start items-center justify-between p-2 ">
           <div className="flex flex-col gap-5 md:mt-10 md:items-start items-center">
             <h1 className="text-primary uppercase text-4xl md:text-left text-center md:text-7xl font-semibold">
               Vishal <br /> Khandelwal

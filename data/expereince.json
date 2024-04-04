@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "company": "LeanHippo Marketers",
+    "designation": "Sr. Graphic Designer",
+    "duration": "July 2018 - Oct 2019",
+    "isCurrent": true,
+    "description": "Here I began as a Junior Designer and was later promoted to Senior Graphic Designer. My responsibilities primarily revolved around spearheading the creative process, brainstorming and conceptualizing innovative ideas for social media designs tailored to our clients, predominantly within the restaurant and café industry. Additionally, a key aspect of my role involved ensuring timely delivery of all design projects, maintaining a high level of efficiency and meeting strict deadlines."
+  },
+  {
+    "id": 2,
+    "company": "Pixelpay Media",
+    "designation": "Product Design Specialist ",
+    "duration": "July 2018 - Oct 2019",
+    "isCurrent": false,
+    "description": "Here I began as a Junior Designer and was later promoted to Senior Graphic Designer. My responsibilities primarily revolved around spearheading the creative process, brainstorming and conceptualizing innovative ideas for social media designs tailored to our clients, predominantly within the restaurant and café industry. Additionally, a key aspect of my role involved ensuring timely delivery of all design projects, maintaining a high level of efficiency and meeting strict deadlines."
+  },
+  {
+    "id": 3,
+    "company": "Millions Pixels Pvt. Ltd.",
+    "designation": "Graphic Designer",
+    "duration": "July 2018 - Oct 2019",
+    "isCurrent": false,
+    "description": "Here I began as a Junior Designer and was later promoted to Senior Graphic Designer. My responsibilities primarily revolved around spearheading the creative process, brainstorming and conceptualizing innovative ideas for social media designs tailored to our clients, predominantly within the restaurant and café industry. Additionally, a key aspect of my role involved ensuring timely delivery of all design projects, maintaining a high level of efficiency and meeting strict deadlines."
+  }
+]
