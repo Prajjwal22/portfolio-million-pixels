@@ -16,11 +16,7 @@ export default function Home() {
       <Showcase />
       <Summary />
       <Skills />
-      <Creator />
-
-      <Creator />
-      <Creator />
-      <Creator />
+    <div className="h-screen"></div>
 
     </main>
   );

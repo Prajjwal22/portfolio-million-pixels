@@ -1,0 +1,88 @@
+"use client";
+
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import AppsData from "../data/apps.json";
+import AppCard from "./AppCard";
+import { useGSAP } from "@gsap/react";
+import Button from "./Button";
+
+gsap.registerPlugin(ScrollTrigger);
+export default function Skills() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const scrollRef1 = useRef<HTMLDivElement>(null);
+
+  useGSAP(
+    () => {
+      const { current: children } = scrollRef;
+      const cards = gsap.utils.toArray(children) as HTMLElement[];
+      console.log(cards);
+
+      cards.forEach((card) => {
+        gsap.to(card, {
+          x: -250,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: card,
+            start: "bottom bottom",
+            end: "top",
+            scrub: true,
+          },
+        });
+      });
+    },
+    { scope: scrollRef }
+  );
+
+  useGSAP(
+    () => {
+      const { current: children } = scrollRef1;
+      const cards = gsap.utils.toArray(children) as HTMLElement[];
+      console.log(cards);
+
+      cards.forEach((card) => {
+        gsap.to(card, {
+          x: 250,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: card,
+            start: "bottom bottom",
+            end: "top -30%",
+            scrub: true,
+          },
+        });
+      });
+    },
+    { scope: scrollRef1 }
+  );
+
+  return (
+    <section className="bg-secondary  w-screen p-2 z-10">
+      <div className=" tracking-tight m-auto flex flex-col items-center justify-center gap-8 my-10 overflow-hidden">
+        <h2 className="text-primary font-bold md:text-3xl text-center md:mb-5">
+          Talent Showcase
+        </h2>
+
+        <div ref={scrollRef} className="flex items-center gap-2">
+          {[...AppsData, ...AppsData].map((app) => (
+            <div key={app.id} className="inner-card">
+              <AppCard app={app} />
+            </div>
+          ))}
+        </div>
+        <div
+          ref={scrollRef1}
+          className="flex w-screen flex-row-reverse items-center gap-2 mb-10"
+        >
+          {[...AppsData, ...AppsData].map((app) => (
+            <div key={app.id} className="inner-card">
+              <AppCard app={app} />
+            </div>
+          ))}
+        </div>
+        <Button title="Download Portfolio" variant="outline" />
+      </div>
+    </section>
+  );
+}
