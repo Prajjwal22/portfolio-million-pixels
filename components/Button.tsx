@@ -10,7 +10,7 @@ type buttonProps = {
 export default function Button({ title, variant, icon }: buttonProps) {
   return (
     <div
-      className={`md:h-16 ${icon ? "md:min-w-60 " :"md:min-w-52"} h-12 w-44 flex items-center justify-center cursor-pointer rounded-full ${
+      className={`md:h-16 ${icon ? "md:min-w-60 w-46" :"md:min-w-52 w-44"} h-12  flex items-center justify-center cursor-pointer rounded-full ${
         variant === "solid"
           ? "bg-primary text-secondary"
           : variant === "outlined"

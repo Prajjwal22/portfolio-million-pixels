@@ -18,9 +18,17 @@ export default function Footer() {
         </span>
         <span className="md:text-lg font-medium">Digital Designer</span>
         <span className="md:text-lg font-medium">vishal1993kh1@gmail.com</span>
-        <div className="flex gap-5">
+        <div className="md:flex gap-5 hidden">
           <Button icon="/download.png" title="Download CV" variant="outline" />
-          <Button icon="/download.png" title="Download Portfolio" variant="outline" />
+          <Button
+            icon="/download.png"
+            title="Download Portfolio"
+            variant="outline"
+          />
+        </div>
+        <div className="flex gap-5 md:hidden">
+          <Button title="Download CV" variant="outlined" />
+          <Button title="Download Portfolio" variant="outlined" />
         </div>
         <div className="text-sm md:text-lg flex gap-7">
           <span>Behance</span> |<span>Linkedin</span>|<span>Instagram</span>

@@ -24,8 +24,9 @@ export default function Skills() {
           scrollTrigger: {
             trigger: card,
             start: "bottom bottom",
-            end: "top",
+            end: "top top",
             scrub: true,
+            markers: true,
           },
         });
       });
@@ -45,7 +46,7 @@ export default function Skills() {
           scrollTrigger: {
             trigger: card,
             start: "bottom bottom",
-            end: "top -30%",
+            end: " -30%",
             scrub: true,
           },
         });
@@ -78,7 +79,17 @@ export default function Skills() {
             </div>
           ))}
         </div>
-        <Button title="Download My Resume" icon="/download.png" variant="outline" />
+        <span className="hidden md:block">
+          <Button
+            title="Download My Resume"
+            icon="/download.png"
+            variant="outline"
+          />
+        </span>
+        <span className="md:hidden">
+          {" "}
+          <Button title="Download Resume" variant="outline" />
+        </span>
       </div>
     </section>
   );
