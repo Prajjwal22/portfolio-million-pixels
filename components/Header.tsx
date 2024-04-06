@@ -1,9 +1,19 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React, { useEffect } from "react";
 
 export default function Header() {
+  const pathName = usePathname();
+
   return (
-    <header className="md:h-24 sticky top-0 left-0 right-0 -z-10">
+    <header
+      className={` md:h-24  sticky top-0 left-0 right-0 z-0 ${
+        pathName !== "/" ? "bg-primary text-secondary" : ""
+      }`}
+    >
       <nav className="max-w-7xl m-auto flex justify-between items-center p-2 md:p-5">
         <Image
           className="max-w-20"
@@ -13,8 +23,8 @@ export default function Header() {
           alt="Web Logo"
         />
         <div className="md:flex gap-10 hidden">
-          <span>About Me</span> |<span>Pro Skills</span>|<span>Portfolio</span>|
-          <span>Contact</span>
+         <Link href="/#about">About Me</Link> |<span><Link href="/#expertise">Pro Skills</Link></span>|<span><Link href="/#portfolio">Portfolio</Link></span>|
+          <span><Link href="/contact">Contact</Link></span>
         </div>
       </nav>
     </header>
