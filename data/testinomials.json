@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Prajjwal Rajput",
+    "image": "/prajjwal.png",
+    "about": "Full-Stack Developer",
+    "rating": 5,
+    "review": "Working with Vishal was an absolute pleasure. His attention to detail and creativity brought our project to life in ways we hadn't imagined. He's a true professional and I look forward to collaborating with him again in the future."
+  },
+  {
+    "name": "Jessica Smith",
+    "image": "/profile.png",
+    "about": "Marketing Manager",
+    "rating": 4.5,
+    "review": "Vishal's designs are top-notch! I was impressed by his ability to understand our brand identity and translate it into visually stunning graphics. He's also very responsive and easy to work with. Highly recommended!"
+  },
+  {
+    "name": "David Johnson",
+    "image": "/vishal.png",
+    "about": "Product Manager",
+    "rating": 4,
+    "review": "Vishal is a talented designer with a great eye for detail. He consistently delivered high-quality work and was receptive to feedback throughout the project. I appreciated his professionalism and creativity."
+  },
+  {
+    "name": "Emily Garcia",
+    "image": "/behance.png",
+    "about": "UX Researcher",
+    "rating": 5,
+    "review": "I can't speak highly enough of Vishal's UI/UX skills. He completely transformed our user interface, making it more intuitive and visually appealing. His designs exceeded our expectations and contributed significantly to our project's success."
+  },
+  {
+    "name": "Alex Patel",
+    "image": "/khandelwal.png",
+    "about": "Entrepreneur",
+    "rating": 4.5,
+    "review": "Vishal is a true digital design maestro! His ability to understand complex design briefs and turn them into beautiful, functional interfaces is remarkable. Working with him was a breeze, and I wouldn't hesitate to recommend him to others."
+  },
+  {
+    "name": "Sophie Miller",
+    "image": "/khandelwal.png",
+    "about": "UI Designer",
+    "rating": 5,
+    "review": "Working with Vishal was an absolute delight. He has a keen eye for design and a knack for understanding user behavior. His UI/UX recommendations were invaluable, and he consistently delivered exceptional results. I look forward to working with him again!"
+  }
+]

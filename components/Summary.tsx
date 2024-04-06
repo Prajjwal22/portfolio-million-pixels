@@ -14,6 +14,7 @@ export default function Summary() {
   useEffect(() => {
     if (window.innerWidth > 420) {
       setShowMore(true);
+      setShowEdu(true)
     }
   }, []);
 
