@@ -18,8 +18,7 @@ export default function Home() {
       <Summary />
       <Skills />
       <Testinomials />
-      <Footer/>
-      {/* <div className="h-screen"></div> */}
+      <Footer />
     </main>
   );
 }

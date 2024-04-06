@@ -18,12 +18,12 @@ type PropType = {
 };
 
 type Testinomial = {
-    name:string;
-    about:string;
-    review:string;
-    rating:number;
-    image:string;
-}
+  name: string;
+  about: string;
+  review: string;
+  rating: number;
+  image: string;
+};
 
 type ThumbProps = {
   selected: boolean;
@@ -32,7 +32,7 @@ type ThumbProps = {
   onClick: () => void;
 };
 
-const EmblaCarousel: React.FC<PropType> = ({slides, options}:PropType) => {
+const EmblaCarousel: React.FC<PropType> = ({ slides, options }: PropType) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options);
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
@@ -71,7 +71,7 @@ const EmblaCarousel: React.FC<PropType> = ({slides, options}:PropType) => {
 
   return (
     <div className="embla">
-      <div>
+      <div className="flex flex-col items-center justify-center">
         <div className="embla-thumbs">
           <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
             <div className="embla-thumbs__container">
@@ -98,12 +98,22 @@ const EmblaCarousel: React.FC<PropType> = ({slides, options}:PropType) => {
         </div>
         <div className="embla__viewport" ref={emblaMainRef}>
           <div className="embla__container">
-            {slides.map((slide,index) => (
-              <div className="embla__slide" key={index}>
-                <span>{slide.name}</span>
-                <span>{slide.about}</span>
-                <span>{slide.rating}</span>
-                <span>{slide.review}</span>
+            {slides.map((slide, index) => (
+              <div
+                className="embla__slide flex flex-col items-center gap-3 justify-center mt-10"
+                key={index}
+              >
+                <span className="font-bold text-2xl">{slide.name}</span>
+                <span className="text-lg">{slide.about}</span>
+                {/* <span>{slide.rating}</span> */}
+                <Image
+                  src="/stars.png"
+                  width={200}
+                  height={80}
+                  className="max-w-32"
+                  alt="rating"
+                />
+                <span className="w-2/3 text-left mt-5">{slide.review}</span>
               </div>
             ))}
           </div>
@@ -119,11 +129,10 @@ const Thumb: React.FC<ThumbProps> = (props) => {
   const { selected, slide, onClick } = props;
 
   return (
-    <div
-    >
+    <div className="thumbnail">
       <Image
-        className={`w-36 h-36 rounded-full object-cover p-1  ${
-          selected ? "b-2 border-secondary border" : ""
+        className={`w-32 h-32 rounded-full p-1 mx-1  ${
+          selected ? " border-secondary border-2" : ""
         } `}
         onClick={onClick}
         src={slide}
@@ -191,7 +200,7 @@ const PrevButton: React.FC<PropType1> = (props) => {
 
   return (
     <button
-      className="embla__button embla__button--prev"
+      className="embla__button embla__button--prev absolute left-0"
       type="button"
       {...restProps}
     >
@@ -211,7 +220,7 @@ const NextButton: React.FC<PropType1> = (props) => {
 
   return (
     <button
-      className="embla__button embla__button--next"
+      className="embla__button embla__button--next absolute right-0 "
       type="button"
       {...restProps}
     >
