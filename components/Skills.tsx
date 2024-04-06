@@ -26,7 +26,6 @@ export default function Skills() {
             start: "bottom bottom",
             end: "top top",
             scrub: true,
-            markers: true,
           },
         });
       });
