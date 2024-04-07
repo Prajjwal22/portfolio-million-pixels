@@ -24,6 +24,7 @@ export default function Hero() {
           <span>UI Design</span>
           <span>Motion Graphics</span>
         </div>
+        
         <Image
           className="absolute bottom-0 w-full rotate-180 object-contain "
           src="/herowaves.png"
