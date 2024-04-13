@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="w-screen text-secondary h-screen relative  overflow-hidden ">
+    <section className=" text-secondary h-screen relative  overflow-hidden ">
       <div className="md:h-[calc(100dvh-150px)]  bg-primary h-[600px] flex flex-col items-center">
         <div className="max-w-5xl flex flex-col m-auto items-center justify-center">
           <h2 className="font-bebas font-semibold text-[180px] tracking-wide -mt-16	">
@@ -24,7 +24,7 @@ export default function Hero() {
           <span>UI Design</span>
           <span>Motion Graphics</span>
         </div>
-        
+
         <Image
           className="absolute bottom-0 w-full rotate-180 object-contain "
           src="/herowaves.png"

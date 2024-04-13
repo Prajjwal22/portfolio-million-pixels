@@ -4,7 +4,7 @@ import Button from "./Button";
 
 export default function Footer() {
   return (
-    <section className="bg-primary md:bg-secondary w-screen flex p-2 z-10 md:text-primary text-secondary">
+    <section className="bg-primary md:bg-secondary flex p-2 z-10 md:text-primary text-secondary">
       <div className="my-12 max-w-5xl m-auto flex gap-8 flex-col items-center justify-center">
         <Image
           className="md:max-w-60 max-w-36 rounded-full"

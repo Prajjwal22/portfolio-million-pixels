@@ -19,7 +19,7 @@ export default function Summary() {
   }, []);
 
   return (
-    <section className="bg-secondary  w-screen p-2 z-10">
+    <section className="bg-secondary  p-2 z-10">
       <div className=" max-w-6xl tracking-tight m-auto flex flex-col justify-center gap-8 mt-16">
         <h2 className="   text-primary font-bold md:text-3xl text-center md:mb-5">
           Professional Journey
