@@ -55,7 +55,7 @@ export default function Skills() {
   );
 
   return (
-    <section className="bg-secondary z-10">
+    <section className="font-poppins bg-secondary z-10">
       <div className=" tracking-tight m-auto flex flex-col items-center justify-center gap-8 my-10 overflow-hidden">
         <h2 className="text-primary font-bold md:text-3xl text-center md:mb-5">
           Talent Showcase

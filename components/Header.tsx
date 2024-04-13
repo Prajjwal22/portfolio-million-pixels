@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header
-      className={` md:h-24  sticky top-0 left-0 right-0 z-0 ${
+      className={`font-poppins md:h-24  sticky top-0 left-0 right-0 z-0 ${
         pathName !== "/" ? "bg-primary text-secondary" : ""
       }`}
     >
@@ -23,8 +23,18 @@ export default function Header() {
           alt="Web Logo"
         />
         <div className="md:flex gap-10 hidden">
-         <Link href="/#about">About Me</Link> |<span><Link href="/#expertise">Pro Skills</Link></span>|<span><Link href="/#portfolio">Portfolio</Link></span>|
-          <span><Link href="/contact">Contact</Link></span>
+          <Link href="/#about">About Me</Link> |
+          <span>
+            <Link href="/#expertise">Pro Skills</Link>
+          </span>
+          |
+          <span>
+            <Link href="/#portfolio">Portfolio</Link>
+          </span>
+          |
+          <span>
+            <Link href="/contact">Contact</Link>
+          </span>
         </div>
       </nav>
     </header>

@@ -8,7 +8,7 @@ export default function Testinomials() {
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
   return (
-    <section className="bg-primary w-full p-2 z-10 hidden md:block">
+    <section className="font-poppins bg-primary w-full p-2 z-10 hidden md:block">
       <div className="max-w-6xl m-auto flex flex-col justify-center items-center gap-8 text-secondary my-12">
         <h2 className="font-bold md:text-3xl text-center md:mb-5">
           Voices of Recommendation

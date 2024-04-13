@@ -14,12 +14,12 @@ export default function Summary() {
   useEffect(() => {
     if (window.innerWidth > 420) {
       setShowMore(true);
-      setShowEdu(true)
+      setShowEdu(true);
     }
   }, []);
 
   return (
-    <section className="bg-secondary  p-2 z-10">
+    <section className=" font-poppins bg-secondary font-body p-2 z-10">
       <div className=" max-w-6xl tracking-tight m-auto flex flex-col justify-center gap-8 mt-16">
         <h2 className="   text-primary font-bold md:text-3xl text-center md:mb-5">
           Professional Journey
@@ -41,19 +41,19 @@ export default function Summary() {
           <Timeline data={Expereince} showMore={showMore} />
         </div>
         <div className="relative">
-        <div className="flex justify-between items-center ">
-          <span className="absolute md:hidden bottom-0 w-screen -left-2 h-0.5 bg-mute"></span>
+          <div className="flex justify-between items-center ">
+            <span className="absolute md:hidden bottom-0 w-screen -left-2 h-0.5 bg-mute"></span>
 
-          <span className="md:h-16 flex md:text-xl text-sm items-center justify-center md:w-52 h-10 w-28 rounded-full bg-primary text-secondary">
-            Education
-          </span>
-          <span
-            onClick={() => setShowEdu(!showEdu)}
-            className="text-xs md:hidden"
-          >
-            Show {showEdu ? "Less" : "More"}{" "}
-            <span className="md:hidden rotate-90">&gt;</span>
-          </span>
+            <span className="md:h-16 flex md:text-xl text-sm items-center justify-center md:w-52 h-10 w-28 rounded-full bg-primary text-secondary">
+              Education
+            </span>
+            <span
+              onClick={() => setShowEdu(!showEdu)}
+              className="text-xs md:hidden"
+            >
+              Show {showEdu ? "Less" : "More"}{" "}
+              <span className="md:hidden rotate-90">&gt;</span>
+            </span>
           </div>
           <Education educationData={educationData} showEdu={showEdu} />
         </div>

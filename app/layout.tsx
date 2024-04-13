@@ -1,15 +1,23 @@
 import Header from "@/components/Header";
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Bebas_Neue, Poppins } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import { ScrollObserver } from "@/contexts/ScrollContext";
 
 const poppins = Poppins({
   subsets: ["latin"],
+  display: "swap",
+
   weight: ["400", "500", "600", "700"],
+  variable: "--poppins-font",
 });
-// const bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
+const bebas = Bebas_Neue({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  variable: "--bebas-font",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,7 +32,9 @@ export default function RootLayout({
   return (
     <ScrollObserver>
       <html lang="en">
-        <body className={`${poppins.className}  scroll-smooth antialiased`}>
+        <body
+          className={`${poppins.variable} ${bebas.variable}  scroll-smooth antialiased`}
+        >
           <Providers>
             <Header />
             {children}

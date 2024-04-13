@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "bebas": "var(--bebas-font)",
+        "poppins": "var(--poppins-font)",
+      },
       content: {
         'arrowRightIcon': 'url("../public/arrow.png")',
       },
