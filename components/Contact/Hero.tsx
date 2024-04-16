@@ -134,7 +134,7 @@ export default function Hero() {
           >
             <div className="inner">
               <h1 className="hero-title font-bebas uppercase text-heroSize caption-timeline primary-font-title">
-                <span>LET'S &nbsp;CONNECT</span>
+                <span>LET`&apos;S &nbsp;CONNECT</span>
               </h1>
             </div>
           </div>
