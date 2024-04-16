@@ -8,32 +8,35 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        heroSize: "200px",
+      },
       fontFamily: {
-        "bebas": "var(--bebas-font)",
-        "poppins": "var(--poppins-font)",
+        bebas: "var(--bebas-font)",
+        poppins: "var(--poppins-font)",
       },
       content: {
-        'arrowRightIcon': 'url("../public/arrow.png")',
+        arrowRightIcon: 'url("../public/arrow.png")',
       },
       backgroundSize: {
-        "blursize":"250px"
+        blursize: "250px",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      backgroundColor:{
-        "primary":"#252525",
-        "secondary" : "#EFEFEF"
+      backgroundColor: {
+        primary: "#252525",
+        secondary: "#EFEFEF",
       },
       borderColor: {
-        "primary":"#252525"
+        primary: "#252525",
       },
-      colors:{
-        "primary":"#1C1C1C",
-        "mute":"#BFBFBF",
-        "secondary":"#EFEFEF"
+      colors: {
+        primary: "#1C1C1C",
+        mute: "#BFBFBF",
+        secondary: "#EFEFEF",
       },
     },
   },
