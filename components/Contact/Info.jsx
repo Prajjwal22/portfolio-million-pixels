@@ -131,7 +131,7 @@ export default function Info() {
           >
             <div className="inner">
               <h1 className="hero-title font-bebas uppercase text-heroSize caption-timeline primary-font-title">
-                <span>LetsConnect</span>
+                <span>Let&apos;s&nbsp;Connect</span>
               </h1>
             </div>
           </div>
