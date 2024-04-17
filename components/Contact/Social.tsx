@@ -10,6 +10,7 @@ export default function Social() {
           {ContactDetails.map((contact, i) => (
             <ContactCard
             index={i}
+            key={i}
               icon={contact.icon}
               title={contact.title}
               info={contact.info}
