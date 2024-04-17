@@ -1,0 +1,24 @@
+[
+  {
+    "icon": "/email.png",
+    "title": "Email",
+    "info": "vishal1993kh1@gmail.com"
+  },
+  {
+    "icon": "/thumb.png",
+    "info": "<b>Behance</b><br><span>www.behance.net/vishal1993ce3e</span><br><br><b>LinkedIn</b><br><span>www.linkedin.com/in/vishal-khandelwal-150216124/</span><br><br><b>Instagram</b><br><span>www.instagram.com/vishal_khandelwal93/</span>"
+  },
+  {
+    "icon": "/phone.png",
+    "title": "Phone",
+    "info": "+91 7982762632"
+  },
+  {
+    "icon": "/cv.png",
+    "title": "Download My CV"
+  },
+  {
+    "icon": "/portfolio.png",
+    "title": "Download My Portfolio"
+  }
+]
