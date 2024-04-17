@@ -130,7 +130,7 @@ export default function Info() {
             className="content-full-width parallax-scroll-caption text-align-center height-title"
           >
             <div className="inner">
-              <h1 className="hero-title font-bebas uppercase text-9xl caption-timeline primary-font-title">
+              <h1 className="hero-title font-bebas uppercase text-heroSize caption-timeline primary-font-title">
                 <span>LetsConnect</span>
               </h1>
             </div>
