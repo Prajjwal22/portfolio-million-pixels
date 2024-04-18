@@ -10,12 +10,12 @@ type buttonProps = {
 export default function Button({ title, variant, icon }: buttonProps) {
   return (
     <div
-      className={`md:h-16 ${icon ? "md:min-w-60 w-46" :"md:min-w-52 w-44"} h-12  flex items-center justify-center cursor-pointer rounded-full ${
+      className={`md:h-16 ${icon ? "md:min-w-60 w-46" :"md:min-w-52 w-44"} h-12 transition-colors duration-500  flex items-center justify-center cursor-pointer rounded-full ${
         variant === "solid"
-          ? "bg-primary text-secondary"
+          ? "bg-primary hover:border-primary hover:b-2 hover:border hover:bg-transparent hover:text-primary text-secondary"
           : variant === "outlined"
-          ? "text-secondary border-white border b-2"
-          : "bg-transparent text-primary border-primary b-2 border"
+          ? "text-secondary  hover:bg-secondary hover:text-primary border-white border b-2"
+          : "bg-transparent hover:bg-primary hover:text-secondary text-primary border-primary b-2 border"
       }`}
     >
       <span className="flex items-center">

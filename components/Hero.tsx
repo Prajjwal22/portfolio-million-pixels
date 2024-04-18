@@ -51,7 +51,7 @@ export default function Hero() {
               />
             </span>
             <span className="flex items-center gap-3">
-              <Button title="Download CV" variant="solid" />
+              <Button title="Download CV" variant="outline" />
               <Button title="Download Portfolio" variant="outline" />
             </span>
           </div>
