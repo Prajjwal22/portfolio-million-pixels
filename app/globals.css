@@ -74,3 +74,8 @@ body {
 .hovercard:hover img{
 filter: invert(1);
 }
+
+
+.appCard:hover span {
+  display: block;
+}
