@@ -13,7 +13,7 @@ export default function ContactPage() {
       <Info />
       <Social />
       <ContactForm />
-      <Feedback />
+      {/* <Feedback /> */}
       <Footer/>
     </>
   );
