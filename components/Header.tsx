@@ -14,7 +14,7 @@ export default function Header() {
         pathName !== "/" ? "bg-primary text-secondary" : ""
       }`}
     >
-      <nav className="max-w-7xl m-auto flex justify-between items-center p-2 md:p-5">
+      <nav className="max-w-6xl m-auto flex justify-between items-center p-2 md:p-5">
         <Image
           className="max-w-20"
           src="/logo.png"
@@ -22,7 +22,7 @@ export default function Header() {
           height={100}
           alt="Web Logo"
         />
-        <div className="md:flex gap-10 hidden">
+        <div className="md:flex text-sm gap-10 hidden">
           <Link href="/#about">About Me</Link> |
           <span>
             <Link href="/#expertise">Pro Skills</Link>
