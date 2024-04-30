@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="font-poppins relative md:h-[calc(100dvh-330px)] h-[600px] overflow-hidden md:mt-8 ">
+    <section className="font-poppins relative md:h-[calc(100dvh-300px)] h-[600px] overflow-hidden md:mt-8 ">
       {/* <Parallax speed={10}> */}
       <div className="fixed left-0 right-0 z-0 top-30 h-screen">
         <div className="max-w-6xl m-auto flex flex-col md:flex-row md:items-start items-center justify-between p-2 ">
