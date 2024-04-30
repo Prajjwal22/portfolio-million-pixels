@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "./Button";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -31,7 +32,7 @@ export default function Footer() {
           <Button title="Download Portfolio" variant="outlined" />
         </div>
         <div className="text-sm md:text-lg flex gap-7">
-          <span>Behance</span> |<span>Linkedin</span>|<span>Instagram</span>
+        <Link href="https://www.behance.net/vishal1993ce3e?log_shim_removal=1"> <span>Behance</span></Link> |  <Link href="http://www.linkedin.com/in/vishal-khandelwal-150216124/"><span>Linkedin</span></Link>|   <Link href="http://www.instagram.com/vishal_khandelwal93/"><span>Instagram</span></Link>
         </div>
       </div>
     </section>

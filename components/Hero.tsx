@@ -5,6 +5,7 @@ import React from "react";
 import Button from "./Button";
 import TypeWriter from "./TypeWriter";
 import { Parallax } from "react-scroll-parallax";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -16,7 +17,7 @@ export default function Hero() {
             <h1 className="text-primary uppercase text-3xl md:text-left text-center md:text-6xl font-semibold">
               Vishal <br /> Khandelwal
             </h1>
-            <span className=" text-lg md:text-xl md:text-left text-center h-10 ">
+            <span className=" text-lg md:text-2xl md:text-left text-center h-10 ">
               <TypeWriter
                 strings={["Digital Designer", "UI/UX Enthusiast", "Foodie "]}
                 typeSpeed={110}
@@ -27,28 +28,28 @@ export default function Hero() {
               />
             </span>
             <span className="flex gap-4 ">
-              <Image
+             <Link href="http://www.instagram.com/vishal_khandelwal93/"> <Image
                 className="md:max-w-10 max-w-8"
                 src="/behance.png"
                 alt="Behance"
                 width={400}
                 height={400}
-              />
-              <Image
+              /></Link>
+              <Link href="http://www.linkedin.com/in/vishal-khandelwal-150216124/"> <Image
                 className="md:max-w-10 max-w-8"
                 src="/linkedin.png"
                 alt="Linkedin"
                 width={400}
                 height={400}
-              />
+              /></Link>
 
-              <Image
+<Link href="https://www.behance.net/vishal1993ce3e?log_shim_removal=1">  <Image
                 className="md:max-w-10 max-w-8"
                 src="/instagram.png"
                 alt="Instagram"
                 width={400}
                 height={400}
-              />
+              /></Link>
             </span>
             <span className="flex items-center gap-3">
               <Button title="Download CV" variant="outline" />

@@ -38,7 +38,7 @@ export default function Expertise() {
       className="bg-primary w-full p-2 z-10"
     >
       <div className=" max-w-6xl tracking-tight m-auto flex flex-col justify-center gap-8 text-secondary mt-16">
-        <h2 className="font-poppins font-bold md:text-3xl text-center md:mb-12">
+        <h2 className="font-poppins font-bold md:text-xl text-center md:mb-12">
           Expertise Unleashed
         </h2>
         <div className="text-secondary uppercase font-bold text-5xl md:text-8xl flex flex-col items-center gap-20 font-bebas">

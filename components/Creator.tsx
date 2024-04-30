@@ -5,10 +5,10 @@ export default function Creator() {
   return (
     <section id="about" className="font-poppins bg-primary w-full p-2 z-10">
       <div className="max-w-6xl m-auto flex flex-col justify-center gap-8 text-secondary">
-        <h2 className="font-bold md:text-3xl text-center md:mb-5">
+        <h2 className="font-bold md:text-xl text-center md:mb-5">
           Meet the Creator
         </h2>
-        <span className="text-xl md:text-2xl font-bold text-left">
+        <span className="text-xl md:text-xl font-bold text-left">
           I am Vishal Khandelwal
         </span>
         <p className="text-sm md:text-base">
