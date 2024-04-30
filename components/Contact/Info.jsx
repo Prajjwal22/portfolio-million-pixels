@@ -120,22 +120,22 @@ export default function Info() {
   }, []); // Empty dependency array ensures this effect only runs once after initial render
 
   return (
-    <section className="font-poppins md:mb-10 text-secondary md:h-[670px] h-96 relative  overflow-hidden  ">
+    <section className="font-poppins md:mb-10 text-secondary md:h-[370px] h-80 relative  overflow-hidden  ">
       <div className="fixed left-0 right-0 z-0 top-30 h-screen">
-        <div className="md:h-[calc(670px-150px)]  bg-primary h-80 flex flex-col items-center p-2">
-          <div className="max-w-5xl flex flex-col m-auto items-center justify-center">
+        <div className="md:h-[calc(470px-150px)]  bg-primary h-72 flex flex-col justify-center items-center px-2">
+          <div className="max-w-5xl flex flex-col md:m-auto mt-0 mb-0 items-center justify-center">
             <div
               ref={titleRef}
               id="hero-caption"
               className="content-full-width  parallax-scroll-caption text-align-center height-title"
             >
               <div className="inner">
-                <h1 className="hero-title font-bebas uppercase md:text-heroSize text-7xl caption-timeline primary-font-title">
+                <h1 className="hero-title font-bebas uppercase md:text-heroSize text-6xl caption-timeline primary-font-title">
                   <span>Let&apos;s&nbsp;Connect</span>
                 </h1>
               </div>
             </div>
-            <span className="md:text-2xl text-base text-center">
+            <span className="md:text-lg text-sm text-center">
               Revolutionizing user engagement with an experience that transcends
               imagination, blending seamless functionality with unparalleled
               creativity.

@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontSize: {
-        heroSize: "200px",
+        heroSize: "180px",
       },
       fontFamily: {
         bebas: "var(--bebas-font)",
