@@ -15,11 +15,7 @@ export default function Details() {
     "/word1.png",
     "/port.png",
     "/word1.png",
-    "/port.png",
-    "/word1.png",
-    "/work.png",
-    "/word1.png",
-    "/work.png",
+
   ];
   return (
     <section className="w-full font-poppins z-50 relative">

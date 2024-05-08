@@ -18,7 +18,6 @@ export default function Home() {
       <Summary />
       <Skills />
       <Testinomials />
-      <Footer />
     </main>
   );
 }

@@ -14,7 +14,7 @@ export default function ContactPage() {
       <Social />
       <ContactForm />
       {/* <Feedback /> */}
-      <Footer/>
+      
     </>
   );
 }
