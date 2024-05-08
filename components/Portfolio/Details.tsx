@@ -113,8 +113,8 @@ export default function Details() {
           <span>
             Visitors encountering the posts experience a seamless journey
             through the carousel, gaining a clear understanding of LeanHippo
-            Marketers' services. The visually appealing mockups provide context
-            and demonstrate the agency's capabilities, encouraging interaction
+            Marketers&apos; services. The visually appealing mockups provide context
+            and demonstrate the agency&apos;s capabilities, encouraging interaction
             and ultimately leading to successful lead generation.
           </span>
           <div className="flex items-center justify-center w-full my-20">
