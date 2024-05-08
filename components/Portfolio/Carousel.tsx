@@ -49,7 +49,7 @@ export default function Carousel({ images }: ImageProps) {
             alt="new image"
             width={500}
             height={500}
-            className={`port-img  object-cover`}
+            className={`port-img  object-cover rounded-lg`}
           />
         ))}{" "}
       </div>

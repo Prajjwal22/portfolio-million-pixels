@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Carousel from "./Carousel";
+import VerticalSlide from "./VerticalSlide";
 
 export default function Details() {
   const images = [
@@ -75,16 +76,16 @@ export default function Details() {
             demographic.
           </p>
         </div>
-        <div className="w-full my-10">
+        <div className="w-full my-20">
           <Carousel images={images} />
         </div>
-        <div className="max-w-6xl m-auto flex gap-10 justify-between items-start">
+        <div className="max-w-6xl m-auto flex gap-10 justify-between items-start my-20">
           <Image
             src="/port.png"
             width={900}
             height={900}
             alt="done"
-            className="w-2/4 h-[500px] object-cover"
+            className="w-2/4 h-[500px] object-cover rounded-lg"
           />
           <div className="w-2/4 flex flex-col items-start">
             <span className="font-bold text-lg mb-5">Design Approach</span>
@@ -98,6 +99,19 @@ export default function Details() {
               branding.
             </span>
           </div>
+        </div>
+        <div className="flex flex-col items-start max-w-6xl m-auto">
+          <span className="font-bold text-lg mb-5">
+            Integration of Social Media:
+          </span>
+          <span>
+            Launched across Instagram, LinkedIn, and Facebook, the campaign
+            leverages targeted ads to reach the desired audience of new startup
+            companies. By utilizing these social media platforms, LeanHippo
+            Marketers aims to maximize visibility and engagement, effectively
+            reaching potential clients and driving lead generation.
+          </span>
+          <VerticalSlide images={images} />
         </div>
       </div>
     </section>
