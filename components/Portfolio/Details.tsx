@@ -93,7 +93,7 @@ export default function Details() {
               The campaign utilizes carousel posts to highlight all services and
               sub-services offered by LeanHippo Marketers. Each post features
               visually appealing mockup backgrounds illustrating the services
-              and showcasing LeanHippo's own projects. Content within the posts
+              and showcasing LeanHippo&apos;s own projects. Content within the posts
               is informative, detailing the range of services provided,
               including website design, consulting, digital marketing, and
               branding.
