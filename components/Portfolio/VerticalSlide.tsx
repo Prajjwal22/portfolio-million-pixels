@@ -39,7 +39,10 @@ export default function VerticalSlide({ images }: ImageProps) {
   return (
     <section id="portfolio" className="font-poppins bg-primary w-full p-2 z-10">
       <div className=" max-w-7xl tracking-tight m-auto flex flex-col justify-center gap-8 my-16">
-        <div className={` h-[${(images.length + 1) * 100}vh] bg-primary`}>
+        <div
+          className=" bg-primary"
+          style={{ height: `${(images.length + 1) * 100}dvh` }}
+        >
           {images.map((image, index) => (
             <div
               key={index}
