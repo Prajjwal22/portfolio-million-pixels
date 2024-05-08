@@ -12,6 +12,11 @@
 }
 
 
+
+.portfolio-menu span{
+    min-width: max-content;
+}
+
 /* 
 .portfolio-images img {
     min-width: 300px;

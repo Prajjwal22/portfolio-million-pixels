@@ -29,7 +29,7 @@ export default function Header() {
           </span>
           |
           <span>
-            <Link href="/#portfolio">Portfolio</Link>
+            <Link href="/portfolio">Portfolio</Link>
           </span>
           |
           <span>

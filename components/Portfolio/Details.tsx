@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Carousel from "./Carousel";
 import VerticalSlide from "./VerticalSlide";
+import Button from "../Button";
 
 export default function Details() {
   const images = [
@@ -79,22 +80,22 @@ export default function Details() {
         <div className="w-full my-20">
           <Carousel images={images} />
         </div>
-        <div className="max-w-6xl m-auto flex gap-10 justify-between items-start my-20">
+        <div className="max-w-6xl m-auto flex md:flex-row flex-col gap-10 justify-between items-start my-20">
           <Image
             src="/port.png"
             width={900}
             height={900}
             alt="done"
-            className="w-2/4 h-[500px] object-cover rounded-lg"
+            className="md:w-2/4 h-[500px] object-cover rounded-lg"
           />
-          <div className="w-2/4 flex flex-col items-start">
+          <div className="md:w-2/4 flex flex-col items-start">
             <span className="font-bold text-lg mb-5">Design Approach</span>
             <span>
               The campaign utilizes carousel posts to highlight all services and
               sub-services offered by LeanHippo Marketers. Each post features
               visually appealing mockup backgrounds illustrating the services
-              and showcasing LeanHippo&apos;s own projects. Content within the posts
-              is informative, detailing the range of services provided,
+              and showcasing LeanHippo&apos;s own projects. Content within the
+              posts is informative, detailing the range of services provided,
               including website design, consulting, digital marketing, and
               branding.
             </span>
@@ -112,6 +113,17 @@ export default function Details() {
             reaching potential clients and driving lead generation.
           </span>
           <VerticalSlide images={images} />
+          <span className="font-bold text-lg mb-5">Result</span>
+          <span>
+            Visitors encountering the posts experience a seamless journey
+            through the carousel, gaining a clear understanding of LeanHippo
+            Marketers' services. The visually appealing mockups provide context
+            and demonstrate the agency's capabilities, encouraging interaction
+            and ultimately leading to successful lead generation.
+          </span>
+          <div className="flex items-center justify-center w-full my-20">
+            <Button variant="outlined" title="View More" />
+          </div>
         </div>
       </div>
     </section>

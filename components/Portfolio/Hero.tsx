@@ -123,7 +123,7 @@ export default function Info() {
     <section className="font-poppins md:mb-10 text-secondary md:h-[470px] h-80 relative  overflow-hidden  ">
       <div className="fixed left-0 right-0 z-0 top-30 h-screen">
         <div className="md:h-[calc(470px-50px)]  bg-primary h-72 flex flex-col justify-center items-center px-2">
-          <div className="max-w-5xl flex flex-col md:m-auto mt-0 mb-0 items-center justify-center">
+          <div className="w-full max-w-5xl flex flex-col md:m-auto mt-0 mb-0 items-center justify-center">
             <div
               ref={titleRef}
               id="hero-caption"
@@ -140,8 +140,8 @@ export default function Info() {
               imagination, blending seamless functionality with unparalleled
               creativity.
             </span>
-            <div className="flex m-auto text-lg font-medium items-center gap-12 mt-20">
-              <span className="bg-secondary text-primary px-10 py-3 rounded-full">
+            <div className="flex m-auto md:text-lg text-xs font-medium items-center md:justify-center  md:gap-12 gap-5 mt-20 w-full overflow-y-hidden portfolio-menu">
+              <span className="bg-secondary text-primary md:px-10 px-5 py-2 md:py-3 rounded-full">
                 All
               </span>
               <span>Graphic Design</span>
