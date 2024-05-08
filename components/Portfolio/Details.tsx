@@ -1,7 +1,24 @@
 import Image from "next/image";
 import React from "react";
+import Carousel from "./Carousel";
 
 export default function Details() {
+  const images = [
+    "/word1.png",
+    "/port.png",
+    "/word1.png",
+    "/port.png",
+    "/word1.png",
+    "/port.png",
+    "/word1.png",
+    "/port.png",
+    "/word1.png",
+    "/port.png",
+    "/word1.png",
+    "/work.png",
+    "/word1.png",
+    "/work.png",
+  ];
   return (
     <section className="w-full font-poppins z-50 relative">
       <div className="bg-white p-2">
@@ -57,6 +74,30 @@ export default function Details() {
             goal is to attract new customers and generate leads within this
             demographic.
           </p>
+        </div>
+        <div className="w-full my-10">
+          <Carousel images={images} />
+        </div>
+        <div className="max-w-6xl m-auto flex gap-10 justify-between items-start">
+          <Image
+            src="/port.png"
+            width={900}
+            height={900}
+            alt="done"
+            className="w-2/4 h-[500px] object-cover"
+          />
+          <div className="w-2/4 flex flex-col items-start">
+            <span className="font-bold text-lg mb-5">Design Approach</span>
+            <span>
+              The campaign utilizes carousel posts to highlight all services and
+              sub-services offered by LeanHippo Marketers. Each post features
+              visually appealing mockup backgrounds illustrating the services
+              and showcasing LeanHippo's own projects. Content within the posts
+              is informative, detailing the range of services provided,
+              including website design, consulting, digital marketing, and
+              branding.
+            </span>
+          </div>
         </div>
       </div>
     </section>
