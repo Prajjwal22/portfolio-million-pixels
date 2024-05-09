@@ -25,10 +25,19 @@ export default function Carousel({ images }: ImageProps) {
           x: -150,
           ease: "power1.inOut",
           scrollTrigger: {
+            pin: true,
+            pinType:"fixed",
             trigger: card,
-            start: "bottom bottom",
-            end: "top top",
-            scrub: true,
+            start: "bottom +=600 ",
+            end: "top top  ",
+            scrub: 1,
+            markers: true,
+            snap: {
+              snapTo: "labels", // snap to the closest label in the timeline
+              duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
+              delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
+              ease: "power1.inOut", // the ease of the snap animation ("power3" by default)
+            },
           },
         });
       });
@@ -37,13 +46,14 @@ export default function Carousel({ images }: ImageProps) {
   );
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden image-carousel">
       <div
         ref={scrollRef}
         className="flex items-center gap-2  portfolio-images "
       >
         {images.map((image, idx) => (
           <Image
+            id="portfolio-images"
             key={idx}
             src={image}
             alt="new image"
