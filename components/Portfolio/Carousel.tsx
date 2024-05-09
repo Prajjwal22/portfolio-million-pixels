@@ -26,10 +26,11 @@ export default function Carousel({ images }: ImageProps) {
           ease: "power1.inOut",
           scrollTrigger: {
             pin: true,
-            pinType:"fixed",
+            markers: true,
+            pinType: "fixed",
             trigger: card,
             start: "bottom +=600 ",
-            end: "top top  ",
+            end: "1020px 10%  ",
             scrub: 1,
             snap: {
               snapTo: "labels", // snap to the closest label in the timeline
