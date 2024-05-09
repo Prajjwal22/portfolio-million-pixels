@@ -140,7 +140,7 @@ export default function Info() {
               imagination, blending seamless functionality with unparalleled
               creativity.
             </span>
-            <div className="flex m-auto md:text-lg text-xs font-medium items-center md:justify-center  md:gap-12 gap-5 mt-20 w-full overflow-y-hidden portfolio-menu">
+            <div className="flex m-auto md:text-base text-xs font-medium items-center md:justify-center  md:gap-12 gap-5 mt-20 w-full overflow-y-hidden portfolio-menu">
               <span className="bg-secondary text-primary md:px-10 px-5 py-2 md:py-3 rounded-full">
                 All
               </span>
