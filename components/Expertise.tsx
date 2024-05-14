@@ -43,31 +43,31 @@ export default function Expertise() {
         </h2>
         <div className="text-secondary uppercase font-bold text-5xl md:text-8xl flex flex-col items-center gap-20 font-bebas">
           <span
-            style={{ opacity: opacityForBlock(progress, 0) }}
+            style={{ opacity: opacityForBlock(progress, 1) }}
             className="expertiseText"
           >
             Graphic Design
           </span>
           <span
-            style={{ opacity: opacityForBlock(progress, 1) }}
+            style={{ opacity: opacityForBlock(progress, 2) }}
             className="expertiseText"
           >
             Branding
           </span>
           <span
-            style={{ opacity: opacityForBlock(progress, 2) }}
+            style={{ opacity: opacityForBlock(progress, 3) }}
             className="expertiseText"
           >
             UI Design
           </span>
           <span
-            style={{ opacity: opacityForBlock(progress, 3) }}
+            style={{ opacity: opacityForBlock(progress, 4) }}
             className="expertiseText"
           >
             Motion Graphics
           </span>
           <span
-            style={{ opacity: opacityForBlock(progress, 4) }}
+            style={{ opacity: opacityForBlock(progress, 5) }}
             className="expertiseText"
           >
             Video Editing

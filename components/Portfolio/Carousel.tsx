@@ -25,7 +25,7 @@ export default function Carousel({ images }: ImageProps) {
           x: -150,
           ease: "power1.inOut",
           scrollTrigger: {
-            pin: true,
+            // pin: true,
             // markers: true,
             pinType: "fixed",
             trigger: card,
