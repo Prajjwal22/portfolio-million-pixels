@@ -79,3 +79,7 @@ filter: invert(1);
 .appCard:hover span {
   display: block;
 }
+
+.appCard:hover img {
+  margin-bottom: 40px;
+}

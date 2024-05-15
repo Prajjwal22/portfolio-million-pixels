@@ -4,7 +4,7 @@ import Button from "../Button";
 
 export default function Grid() {
   return (
-    <section className="relative font-poppins z-50 flex items-center justify-center p-2">
+    <section className="relative font-poppins bg-secondary z-50 flex items-center justify-center px-2">
       <div className="max-w-6xl flex flex-col items-center justify-center">
         <div className="grid md:grid-cols-4 grid-cols-1 gap-2 portfolio-grid mb-10">
           <Card /> <Card /> <Card /> <Card /> <Card />

@@ -84,9 +84,9 @@ export default function Details() {
             alt="done"
             className="md:w-2/4 h-[500px] object-cover rounded-lg"
           />
-          <div className="md:w-2/4 flex flex-col items-start h-full">
+          <div className="md:w-2/4 flex flex-col items-start h-full sticky top-0">
             <span className="font-bold text-lg mb-5">Design Approach</span>
-            <span className="sticky">
+            <span className="">
               The campaign utilizes carousel posts to highlight all services and
               sub-services offered by LeanHippo Marketers. Each post features
               visually appealing mockup backgrounds illustrating the services
