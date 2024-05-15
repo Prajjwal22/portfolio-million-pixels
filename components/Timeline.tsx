@@ -35,7 +35,6 @@ export default function Timeline({ showMore, data }: timeLineProps) {
           const visiblePart = scrollPosition - offsetTop - 7000;
           const calcHeight = visiblePart < 503 ? visiblePart : 503;
           setVisibleHeight(calcHeight);
-          console.log(scrollPosition - offsetTop);
           if (visiblePart > 203) {
             setTurnOn(true);
           } else {
@@ -52,9 +51,6 @@ export default function Timeline({ showMore, data }: timeLineProps) {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrollY]);
-
-  console.log(visibleHeight);
-  console.log(turnOn);
 
   return (
     <div className="my-10" ref={sectionRef}>
@@ -108,7 +104,7 @@ export default function Timeline({ showMore, data }: timeLineProps) {
                 <div
                   key={item.id}
                   className={`flex flex-col gap-4 before:h-3 transition-colors duration-500 before:w-3 ${
-                    turnOn && index ===0 || visibleHeight === 503 
+                    (turnOn && index === 0) || visibleHeight === 503
                       ? "text-primary  before:bg-black"
                       : "text-mute  before:bg-mute"
                   } md:before:inline-flex before:items-center before:hidden before:mt-3 before:rounded-full before:absolute before:-left-2`}
