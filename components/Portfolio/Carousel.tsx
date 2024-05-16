@@ -13,16 +13,14 @@ type ImageProps = {
 
 gsap.registerPlugin(ScrollTrigger);
 
-useEffect(() => {
-  setTimeout(() => {
-    ScrollTrigger.refresh();
-    console.log("scrolltrigger refresh!");
-  }, 1000);
-}, []);
-
 export default function Carousel({ images }: ImageProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
-
+  useEffect(() => {
+    setTimeout(() => {
+      ScrollTrigger.refresh();
+      console.log("scrolltrigger refresh!");
+    }, 1000);
+  }, []);
   useGSAP(
     () => {
       const { current: children } = scrollRef;
