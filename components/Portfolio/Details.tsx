@@ -73,7 +73,7 @@ export default function Details() {
             demographic.
           </p>
         </div>
-        <div className="w-full my-20">
+        <div className="w-full py-10">
           <Carousel images={images} />
         </div>
         <div className="max-w-6xl m-auto flex md:flex-row flex-col gap-10 justify-between items-start my-20">
