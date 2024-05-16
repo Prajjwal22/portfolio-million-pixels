@@ -13,6 +13,13 @@ export default function Skills() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const scrollRef1 = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    setTimeout(() => {
+      ScrollTrigger.refresh();
+      console.log("scrolltrigger refresh!");
+    }, 1000);
+  }, []);
+
   useGSAP(
     () => {
       const { current: children } = scrollRef;

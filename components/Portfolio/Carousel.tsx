@@ -5,13 +5,20 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 type ImageProps = {
   images: string[];
 };
 
 gsap.registerPlugin(ScrollTrigger);
+
+useEffect(() => {
+  setTimeout(() => {
+    ScrollTrigger.refresh();
+    console.log("scrolltrigger refresh!");
+  }, 1000);
+}, []);
 
 export default function Carousel({ images }: ImageProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
