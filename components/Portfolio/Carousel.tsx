@@ -11,6 +11,8 @@ type ImageProps = {
   images: string[];
 };
 
+gsap.registerPlugin(useGSAP);
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Carousel({ images }: ImageProps) {

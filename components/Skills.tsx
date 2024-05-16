@@ -7,6 +7,7 @@ import AppsData from "../data/apps.json";
 import AppCard from "./AppCard";
 import { useGSAP } from "@gsap/react";
 import Button from "./Button";
+gsap.registerPlugin(useGSAP);
 
 gsap.registerPlugin(ScrollTrigger);
 export default function Skills() {
