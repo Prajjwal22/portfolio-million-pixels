@@ -1,18 +1,23 @@
+// Header.tsx
 "use client";
 
+import { scrollContext } from "@/contexts/ScrollContext";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect } from "react";
+import React, { useContext } from "react";
 
 export default function Header() {
   const pathName = usePathname();
+  const { scrollY, scrollDirection } = useContext(scrollContext);
+
+console.log(scrollY)
 
   return (
     <header
-      className={`font-poppins md:h-24  sticky top-0 left-0 right-0 z-0 ${
-        pathName !== "/" ? "bg-primary text-secondary" : ""
-      }`}
+      className={`font-poppins md:h-24 sticky left-0 right-0 ${scrollY < 650? "top-0 z-0" : scrollDirection === "up" ? "top-0 z-[9999]" : " -top-24 z-0"} ${
+        pathName !== "/" ? "bg-primary text-secondary" : "bg-secondary text-primary shadow"
+      } transition-all duration-500`}
     >
       <nav className="max-w-6xl m-auto flex justify-between items-center p-2 md:p-5">
         <Image
