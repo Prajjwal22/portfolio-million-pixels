@@ -15,8 +15,8 @@ console.log(scrollY)
 
   return (
     <header
-      className={`font-poppins md:h-24 sticky left-0 right-0 ${scrollY < 650? "top-0 z-0" : scrollDirection === "up" ? "top-0 z-[9999]" : " -top-24 z-0"} ${
-        pathName !== "/" ? "bg-primary text-secondary" : "bg-secondary text-primary shadow"
+      className={`font-poppins md:h-24 sticky left-0 right-0 ${scrollY < 650? "top-0 z-0" : scrollDirection === "up" ? "top-0 z-[9999] shadow" : " -top-24 z-0"} ${
+        pathName !== "/" ? "bg-primary text-secondary" : "bg-secondary text-primary  "
       } transition-all duration-500`}
     >
       <nav className="max-w-6xl m-auto flex justify-between items-center p-2 md:p-5">
