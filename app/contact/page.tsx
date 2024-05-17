@@ -1,5 +1,5 @@
 import ContactForm from "@/components/Contact/ContactForm";
-import Feedback from "@/components/Contact/Feedback";
+import FeedbackForm from "@/components/Contact/FeedbackForm";
 import Hero from "@/components/Contact/Hero";
 import Info from "@/components/Contact/Info";
 import Social from "@/components/Contact/Social";
@@ -13,8 +13,7 @@ export default function ContactPage() {
       <Info />
       <Social />
       <ContactForm />
-      {/* <Feedback /> */}
-      
+      <FeedbackForm />
     </>
   );
 }
