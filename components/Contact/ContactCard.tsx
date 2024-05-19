@@ -13,7 +13,7 @@ export default function ContactCard({ icon, title, info, index }: cardProps) {
     <div
       className={`${
         index === 1 ? "row-span-2" : ""
-      } p-10 md:w-[500px] font-poppins md:min-h-72  bg-white overflow-hidden h-full hovercard rounded-xl flex items-center justify-center hover:bg-primary hover:text-secondary transition-colors duration-500 hover:after:bg-cover hover:after:bg-[url('../public/blur.png')] hover:after:absolute hover:after:top-[-25%] after:transition-all after:ease-in relative ease-in hover:after:right-0  hover:after:w-full hover:after:h-full`}
+      } md:w-[500px] font-poppins md:min-h-72  bg-white overflow-hidden h-full hovercard rounded-xl flex items-center justify-center hover:bg-primary hover:text-secondary transition-colors duration-500 hover:after:bg-cover hover:after:bg-[url('../public/blur.png')] hover:after:absolute hover:after:top-[-25%] after:transition-all after:ease-in relative ease-in hover:after:right-0  hover:after:w-full hover:after:h-full py-10 px-8`}
     >
       <div className="flex flex-col md:gap-4 h-full w-full justify-center items-center md:text-lg">
         <Image

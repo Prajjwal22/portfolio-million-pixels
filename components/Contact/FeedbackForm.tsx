@@ -45,11 +45,11 @@ export default function FeedbackForm() {
             />
           ))}
         </div>
-        <form className="grid md:grid-cols-3 md:grid-rows-3 gap-5">
-          <div className="p-5 rounded-xl border border-mute text-mute bg-secondary  row-span-2">
+        <form className="grid md:grid-cols-3 md:grid-rows-3 gap-5 w-full" >
+          <div className="p-5 rounded-xl border border-mute text-mute bg-secondary  row-span-2 w-full">
             <label
               htmlFor="drop-file"
-              className="flex items-center justify-center h-full gap-3 text-sm text-primary"
+              className="flex items-center justify-center h-full w-full gap-3 text-sm text-primary"
             >
               <Image
                 src="/expressions/upload.png"
@@ -67,7 +67,7 @@ export default function FeedbackForm() {
 
           <input
             type="text"
-            className="p-5 rounded-xl border border-mute text-mute bg-secondary row-span-3 col-span-2"
+            className="p-5 rounded-xl border border-mute text-mute bg-secondary row-span-3 md:col-span-2 "
             placeholder="Write Your Message"
           />
           <input
