@@ -28,7 +28,7 @@ export default function Hero() {
               />
             </span>
             <span className="flex gap-4 ">
-              <Link href="http://www.instagram.com/vishal_khandelwal93/">
+              <Link href="https://www.behance.net/vishal1993ce3e?log_shim_removal=1">
                 {" "}
                 <Image
                   className="md:max-w-10 max-w-8"
@@ -49,7 +49,7 @@ export default function Hero() {
                 />
               </Link>
 
-              <Link href="https://www.behance.net/vishal1993ce3e?log_shim_removal=1">
+              <Link href="http://www.instagram.com/vishal_khandelwal93/">
                 {" "}
                 <Image
                   className="md:max-w-10 max-w-8"

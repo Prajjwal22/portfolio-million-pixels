@@ -6,7 +6,7 @@
   },
   {
     "icon": "/thumb.png",
-    "info": "<b>Behance</b><br><span>www.behance.net/vishal1993ce3e</span><br><br><b>LinkedIn</b><br><span>www.linkedin.com/in/vishal-khandelwal-150216124/</span><br><br><b>Instagram</b><br><span>www.instagram.com/vishal_khandelwal93/</span>"
+    "info": "<b>Behance</b><br><span><a href='https://www.behance.net/vishal1993ce3e'>www.behance.net/vishal1993ce3e</a></span><br><br><b>LinkedIn</b><br><span><a href='https://www.linkedin.com/in/vishal-khandelwal-150216124/'>www.linkedin.com/in/vishal-khandelwal-150216124/</a></span><br><br><b>Instagram</b><br><span><a href='www.instagram.com/vishal_khandelwal93/'>www.instagram.com/vishal_khandelwal93/</a></span>"
   },
   {
     "icon": "/phone.png",

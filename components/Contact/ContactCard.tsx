@@ -26,7 +26,7 @@ export default function ContactCard({ icon, title, info, index }: cardProps) {
 
         <span className="font-bold">{title}</span>
 
-        <span className="text-center" dangerouslySetInnerHTML={{ __html: info ? info : "" }}></span>
+        <span className="text-center z-50" dangerouslySetInnerHTML={{ __html: info ? info : "" }}></span>
       </div>
     </div>
   );
