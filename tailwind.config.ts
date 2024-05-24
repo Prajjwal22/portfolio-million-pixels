@@ -19,7 +19,7 @@ const config: Config = {
         arrowRightIcon: 'url("../public/arrow.png")',
       },
       backgroundSize: {
-        blursize: "250px",
+        blursize: "210px",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

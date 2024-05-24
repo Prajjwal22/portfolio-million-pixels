@@ -104,14 +104,13 @@ export default function Timeline({ showMore, data }: timeLineProps) {
                 <div
                   key={item.id}
                   className={`flex flex-col gap-4 before:h-3 transition-colors duration-500 before:w-3 ${
-                    (turnOn && index === 0) || visibleHeight === 503
+                    (visibleHeight > 250 && index === 0) ||
+                    visibleHeight === 503
                       ? "text-primary  before:bg-black"
                       : "text-mute  before:bg-mute"
                   } md:before:inline-flex before:items-center before:hidden before:mt-3 before:rounded-full before:absolute before:-left-2`}
                 >
-                  <div
-                    className={`flex flex-col md:flex-row justify-between md:before:block before:hidden before:w-1 before:top-3 before:bg-black  before:absolute before:-left-1`}
-                  >
+                  <div className="flex flex-col md:flex-row justify-between md:before:block before:hidden before:w-1 before:top-3 before:bg-black before:h-20 before:absolute before:-left-1">
                     <span className=" md:text-3xl text-2xl font-semibold">
                       {item.designation}
                     </span>

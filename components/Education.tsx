@@ -83,7 +83,7 @@ export default function Education({ showEdu, educationData }: EducationeProps) {
               <div
                 key={item.id}
                 className={`flex flex-col transition-colors duration-500 gap-4 before:h-3 before:w-3 ${
-                  (turnOn && index === 0) ||
+                  (visibleHeight > 130 && index === 0) ||
                   (visibleHeight > 250 && index === 1) ||
                   visibleHeight === 380
                     ? "text-primary  before:bg-black"
