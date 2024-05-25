@@ -1,9 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 
 import Button from "../Button";
 import Image from "next/image";
+import MuiInput from "./MuiInput";
 
 const ratings = [
   { rating: 1, expression: "1.png" },
@@ -26,6 +27,21 @@ export default function FeedbackForm() {
 
     return classes[i] || classes[5];
   };
+
+  const [value, setValue] = useState({
+    name: "",
+    designation: "",
+    file: "",
+    experience: "",
+  });
+
+  const handleOnChange = (name: string, value: string) => {
+    setValue((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
   return (
     <section className="font-poppins bg-secondary text-primary z-10 relative  overflow-hidden p-2 ">
       <div className="flex flex-col m-auto max-w-5xl bg-white rounded-xl p-8">
@@ -41,11 +57,21 @@ export default function FeedbackForm() {
               alt="tatings"
               width={70}
               height={70}
-              className={`hover:scale-125 max-w-16 md:w-full hover:${expressionsClass(i)}`}
+              className={`hover:scale-125 max-w-16 md:w-full hover:${expressionsClass(
+                i
+              )}`}
             />
           ))}
         </div>
-        <form className="grid md:grid-cols-3 md:grid-rows-3 gap-5 w-full" >
+        <form className="grid md:grid-cols-3 md:grid-rows-3 gap-5 w-full">
+          <div className="col-span-2">
+            <MuiInput
+              value={value.name}
+              inputName="name"
+              handleOnChange={handleOnChange}
+            />
+          </div>
+
           <div className="p-5 rounded-xl border border-mute text-mute bg-secondary  row-span-2 w-full">
             <label
               htmlFor="drop-file"
@@ -62,19 +88,27 @@ export default function FeedbackForm() {
                 <span>Drag and Drop Files Here</span>
               </span>
             </label>
-            <input id="drop-file" type="file" className=" hidden" />
+            <input
+              id="drop-file"
+              name={value.file}
+              type="file"
+              className=" hidden"
+            />
           </div>
-
-          <input
-            type="text"
-            className="p-5 rounded-xl border border-mute text-mute bg-secondary row-span-3 md:col-span-2 "
-            placeholder="Write Your Message"
-          />
-          <input
-            type="text"
-            className="p-5 rounded-xl border border-mute text-mute bg-secondary"
-            placeholder="Email"
-          />
+          <div className="col-span-2">
+            <MuiInput
+              value={value.designation}
+              inputName="Designation "
+              handleOnChange={handleOnChange}
+            />
+          </div>
+          <div className="col-span-3 row-span-3">
+            <MuiInput
+              value={value.experience}
+              inputName="Share Your Experience"
+              handleOnChange={handleOnChange}
+            />
+          </div>
         </form>
         <div className="mt-10 flex justify-end">
           <Button title="Send A Message" variant="solid" />
