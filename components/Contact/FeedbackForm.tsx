@@ -17,15 +17,24 @@ const ratings = [
 export default function FeedbackForm() {
   const expressionsClass = (i: number) => {
     const classes = [
-      "bg-blue-400",
-      "bg-yellow-400",
-      "bg-green-400",
       "bg-red-400",
-      "bg-purple-400",
-      "bg-pink-400",
+      "bg-yellow-400",
+      "bg-orange-400",
+      "bg-blue-400",
+      "bg-green-400",
     ];
 
     return classes[i] || classes[5];
+  };
+
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  const handleMouseEnter = (index: number) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
   };
 
   const [value, setValue] = useState({
@@ -35,7 +44,7 @@ export default function FeedbackForm() {
     experience: "",
   });
 
-  console.log(value)
+  console.log(value);
 
   const handleOnChange = (name: string, value: string) => {
     setValue((prevState) => ({
@@ -53,16 +62,25 @@ export default function FeedbackForm() {
 
         <div className="flex gap-10 items-center justify-center flex-wrap mb-10">
           {ratings.map((rate, i) => (
-            <Image
+            <div
               key={i}
-              src={`/expressions/${rate.expression}`}
-              alt="tatings"
-              width={70}
-              height={70}
-              className={`hover:scale-125 max-w-16 md:w-full hover:${expressionsClass(
-                i
-              )}`}
-            />
+              className="relative hover:scale-125"
+              onMouseEnter={() => handleMouseEnter(i)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <Image
+                src={`/expressions/${rate.expression}`}
+                alt="tatings"
+                width={70}
+                height={70}
+                className={`max-w-16 md:w-full   `}
+              />
+              <span
+                className={`absolute w-16 h-16 rounded-full top-0 left-0 opacity-75 ${
+                  hoveredIndex === i ? expressionsClass(i) : ""
+                }`}
+              ></span>
+            </div>
           ))}
         </div>
         <form className="grid md:grid-cols-3 md:grid-rows-3 gap-5 w-full">
