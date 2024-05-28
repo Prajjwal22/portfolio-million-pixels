@@ -83,3 +83,11 @@ filter: invert(1);
 .appCard:hover img {
   margin-bottom: 40px;
 }
+
+/* @media screen and (max-width: 768px){
+  
+
+.appCard:hover span {
+  display: none;
+}
+} */

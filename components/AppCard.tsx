@@ -21,7 +21,7 @@ export default function AppCard({ app }: AppCardProps) {
         alt="PhotoShop"
         className="md:w-fit md:h-12 w-6 h-auto absolute "
       />
-      <span className="text-xl italic hidden mt-auto mb-20">{app.name}</span>
+      <span className="md:text-xl text-xs italic hidden mt-auto md:mb-20 mb-10">{app.name}</span>
     </div>
   );
 }
