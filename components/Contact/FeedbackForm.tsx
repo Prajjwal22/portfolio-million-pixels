@@ -35,6 +35,8 @@ export default function FeedbackForm() {
     experience: "",
   });
 
+  console.log(value)
+
   const handleOnChange = (name: string, value: string) => {
     setValue((prevState) => ({
       ...prevState,
@@ -98,14 +100,14 @@ export default function FeedbackForm() {
           <div className="col-span-2">
             <MuiInput
               value={value.designation}
-              inputName="Designation "
+              inputName="designation"
               handleOnChange={handleOnChange}
             />
           </div>
-          <div className="col-span-3 row-span-3">
+          <div className="col-span-3 row-span-4">
             <MuiInput
               value={value.experience}
-              inputName="Share Your Experience"
+              inputName="experience"
               handleOnChange={handleOnChange}
             />
           </div>
