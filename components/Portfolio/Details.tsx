@@ -31,7 +31,7 @@ export default function Details() {
             website design, consulting, digital marketing, and branding,
             targeting new startup companies seeking outsourcing solutions.
           </p>
-          <div className="flex items-center flex-wrap justify-around">
+          <div className="grid md:grid-cols-4 grid-cols-2 items-center flex-wrap justify-around">
             <span className="flex flex-col items-center justify-center gap-2">
               <span className="font-bold text-lg">Project</span>
               <span>LeanHippo Marketers</span>
