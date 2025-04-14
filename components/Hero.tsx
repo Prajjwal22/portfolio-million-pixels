@@ -1,11 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
 import Button from "./Button";
 import TypeWriter from "./TypeWriter";
-import { Parallax } from "react-scroll-parallax";
-import Link from "next/link";
 
 export default function Hero() {
   return (

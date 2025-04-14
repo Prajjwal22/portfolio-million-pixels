@@ -1,6 +1,7 @@
 {
   "name": "million-pixels",
   "version": "0.1.0",
+  "author": "Prajjwal Rajput",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,7 +13,7 @@
     "@andresclua/infinite-marquee-gsap": "^0.0.8",
     "@gsap/react": "^2.1.0",
     "embla-carousel-react": "^8.0.1",
-    "next": "14.1.4",
+    "next": "^15.3.0",
     "react": "^18",
     "react-dom": "^18",
     "react-scroll-parallax": "^3.4.5",

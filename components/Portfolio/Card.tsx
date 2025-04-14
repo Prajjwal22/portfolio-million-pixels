@@ -1,8 +1,6 @@
 import { useProject } from "@/context/ProjectContext";
-import { collectGenerateParams } from "next/dist/build/utils";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import React from "react";
 
 export interface Project {
   id: number;
