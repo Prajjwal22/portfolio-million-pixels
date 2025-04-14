@@ -1,6 +1,6 @@
 "use client";
 
-import { scrollContext } from "@/contexts/ScrollContext";
+import { scrollContext } from "@/context/ScrollContext";
 import { useContext, useEffect, useRef, useState } from "react";
 
 type Education = {

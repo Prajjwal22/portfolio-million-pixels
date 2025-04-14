@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useContext } from "react";
-import { scrollContext } from "@/contexts/ScrollContext";
+import { scrollContext } from "@/context/ScrollContext";
 
 const opacityForBlock = (sectionProgress: number, blockNo: number) => {
   const progress = sectionProgress - blockNo;

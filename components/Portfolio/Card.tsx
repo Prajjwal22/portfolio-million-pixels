@@ -1,6 +1,8 @@
 import { useProject } from "@/context/ProjectContext";
+import { collectGenerateParams } from "next/dist/build/utils";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import React from "react";
 
 export interface Project {
   id: number;
@@ -19,6 +21,7 @@ interface CardProps extends Project {}
 export default function Card({ id, image, category, title, ...rest   }: CardProps) {
   const router = useRouter();
   const { setSelectedProject, setIsDetailsVisible ,selectedProject} = useProject();
+console.log(selectedProject)
 
   const handleClick = () => {
     const project = { id, image, category, title, ...rest };

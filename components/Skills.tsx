@@ -69,8 +69,8 @@ export default function Skills() {
         </h2>
 
         <div ref={scrollRef} className="flex items-center gap-2">
-          {[...AppsData, ...AppsData].map((app) => (
-            <div key={app.id} className="inner-card">
+          {[...AppsData, ...AppsData].map((app,i) => (
+            <div key={app.id + "-"+i} className="inner-card">
               <AppCard app={app} />
             </div>
           ))}
@@ -79,8 +79,8 @@ export default function Skills() {
           ref={scrollRef1}
           className="flex w-screen flex-row-reverse items-center gap-2 mb-10"
         >
-          {[...AppsData, ...AppsData].map((app) => (
-            <div key={app.id} className="inner-card">
+          {[...AppsData, ...AppsData].map((app,i) => (
+            <div key={app.id + "-"+i} className="inner-card">
               <AppCard app={app} />
             </div>
           ))}
