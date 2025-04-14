@@ -11,7 +11,6 @@ export default function Info() {
     function generateSpans(selector) {
       const elements = titleRef.current.querySelectorAll(selector);
 
-      console.log(elements);
 
       elements.forEach((element) => {
         const text = element.textContent.trim();

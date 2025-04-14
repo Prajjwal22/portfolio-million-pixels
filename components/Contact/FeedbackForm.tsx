@@ -7,14 +7,15 @@ import Image from "next/image";
 import MuiInput from "./MuiInput";
 
 const ratings = [
-  { rating: 1, expression: "1.png" },
-  { rating: 2, expression: "2.png" },
-  { rating: 3, expression: "3.png" },
-  { rating: 4, expression: "4.png" },
-  { rating: 5, expression: "5.png" },
+  { rating: 1, expression: "1.webp" },
+  { rating: 2, expression: "2.webp" },
+  { rating: 3, expression: "3.webp" },
+  { rating: 4, expression: "4.webp" },
+  { rating: 5, expression: "5.webp" },
 ];
 
 export default function FeedbackForm() {
+  const [selected, setSelected] = useState<number | null>(null);
   const expressionsClass = (i: number) => {
     const classes = [
       "bg-red-400",
@@ -44,7 +45,6 @@ export default function FeedbackForm() {
     experience: "",
   });
 
-  console.log(value);
 
   const handleOnChange = (name: string, value: string) => {
     setValue((prevState) => ({
@@ -53,8 +53,12 @@ export default function FeedbackForm() {
     }));
   };
 
+
   return (
-    <section className="font-poppins bg-secondary text-primary z-10 relative  overflow-hidden p-2 ">
+    <section
+      id="feedback"
+      className="font-poppins bg-secondary text-primary z-10 relative  overflow-hidden p-2 "
+    >
       <div className="flex flex-col m-auto max-w-5xl bg-white rounded-xl p-8">
         <span className="md:text-2xl font-bold text-center mb-10">
           Share Your Experience{" "}
@@ -64,20 +68,25 @@ export default function FeedbackForm() {
           {ratings.map((rate, i) => (
             <div
               key={i}
-              className="relative hover:scale-125"
+              className={`relative hover:scale-125 cursor-pointer ${
+                selected === rate.rating ? "scale-125 " : null
+              }`}
               onMouseEnter={() => handleMouseEnter(i)}
               onMouseLeave={handleMouseLeave}
+              onClick={() => setSelected(rate.rating)}
             >
               <Image
                 src={`/expressions/${rate.expression}`}
-                alt="tatings"
+                alt="ratings"
                 width={70}
                 height={70}
                 className={`max-w-16 md:w-full   `}
               />
               <span
                 className={`absolute w-16 h-16 rounded-full top-0 left-0 opacity-75 ${
-                  hoveredIndex === i ? expressionsClass(i) : ""
+                  hoveredIndex === i || selected === rate.rating
+                    ? expressionsClass(i)
+                    : ""
                 }`}
               ></span>
             </div>

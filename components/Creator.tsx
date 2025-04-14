@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import Link from "next/link";
 
 export default function Creator() {
   return (
@@ -26,9 +27,9 @@ export default function Creator() {
           challenges and used them to fuel my ambition and maintain my own high
           standards.
         </p>
-        <span className="text-center">
+        <Link href="/contact#contactform" className="text-center">
           <Button title="Work With Me" variant="outlined" />
-        </span>
+        </Link>
       </div>
     </section>
   );

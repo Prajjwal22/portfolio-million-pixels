@@ -11,7 +11,6 @@ export default function Header() {
   const pathName = usePathname();
   const { scrollY, scrollDirection } = useContext(scrollContext);
 
-console.log(scrollY)
 
   return (
     <header

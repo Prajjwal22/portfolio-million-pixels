@@ -1,10 +1,16 @@
+'use client'
+
 import Image from "next/image";
+import { useProject } from "@/context/ProjectContext";
+
 import React from "react";
 import Carousel from "./Carousel";
 import VerticalSlide from "./VerticalSlide";
 import Button from "../Button";
 
 export default function Details() {
+  const { setSelectedProject, isDetailsVisible ,selectedProject} = useProject();
+
   const images = [
     "/word1.png",
     "/port.png",
@@ -17,32 +23,32 @@ export default function Details() {
     "/word1.png",
 
   ];
+
+  if (!isDetailsVisible || !selectedProject) return null;
+
+  
   return (
-    <section className="w-full font-poppins z-50 relative">
+    <section id="project-details" className="w-full font-poppins z-50 relative">
       <div className="bg-white p-2">
         <div className="max-w-6xl m-auto flex  flex-col pt-10 pb-52">
           <span className="font-bold  text-xl mb-5">
-            Lead Generation Campaign
+            {selectedProject.title}
           </span>
           <p className="mb-10">
-            This social media campaign was designed for LeanHippo Marketers to
-            generate leads and attract new customers. The goal was to showcase
-            the range of services offered by LeanHippo Marketers, including
-            website design, consulting, digital marketing, and branding,
-            targeting new startup companies seeking outsourcing solutions.
+            {selectedProject.description}
           </p>
           <div className="grid md:grid-cols-4 grid-cols-2 items-center flex-wrap justify-around">
             <span className="flex flex-col items-center justify-center gap-2">
               <span className="font-bold text-lg">Project</span>
-              <span>LeanHippo Marketers</span>
+              <span>{selectedProject.client}</span>
             </span>
             <span className="flex flex-col items-center justify-center gap-2">
               <span className="font-bold text-lg">Services</span>
-              <span>Graphic Design</span>
+              <span>{selectedProject.services?.[0] || 'Not Specified'}</span>
             </span>
             <span className="flex flex-col items-center justify-center gap-2">
               <span className="font-bold text-lg">Date</span>
-              <span>2020</span>
+              <span>{selectedProject?.date}</span>
             </span>
             <span className="flex flex-col items-center justify-center gap-2">
               <span className="font-bold text-lg">Link</span>
@@ -54,11 +60,11 @@ export default function Details() {
       <div className=" bg-primary p-2 text-secondary">
         <div className=" max-w-6xl m-auto flex flex-col gap-5 -mt-32">
           <Image
-            src="/port.png"
+            src={selectedProject.image}
             width={900}
             height={900}
             alt="portf image"
-            className="w-full h-full mb-10"
+            className="w-full h-full mb-10 rounded-lg"
           />
           <span className="font-bold text-lg">
             Interesting facts in development
@@ -117,9 +123,7 @@ export default function Details() {
             and demonstrate the agency&apos;s capabilities, encouraging interaction
             and ultimately leading to successful lead generation.
           </span>
-          <div className="flex items-center justify-center w-full my-20">
-            <Button variant="outlined" title="View More" />
-          </div>
+         
         </div>
       </div>
     </section>

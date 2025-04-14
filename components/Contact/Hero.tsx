@@ -10,10 +10,8 @@ export default function Hero() {
     function generateSpans(selector: string) {
       const elements = titleRef.current?.querySelectorAll(selector);
 
-      console.log(elements);
 
       elements?.forEach((element) => {
-        console.log(element);
         const text = element.textContent?.trim();
         const words = text?.split(" ");
 
@@ -44,7 +42,6 @@ export default function Hero() {
         const spanElement = span as any;
 
         spanElement.originalScaleY = 1;
-        console.log(spanElement);
         spanElement.addEventListener("mousemove", handleMouseMove);
       });
 

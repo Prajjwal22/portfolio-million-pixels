@@ -3,49 +3,58 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap"; // Make sure to import gsap
 import Image from "next/image";
+import { useFilter } from "@/context/FilterContext";
+import projectsData from "@/data/showcasedata.json";
 
-export default function Info() {
-  const titleRef = useRef<null|any>(null);
+export default function Hero() {
+  const titleRef = useRef<null | any>(null);
+  const { selectedCategory, setSelectedCategory } = useFilter();
+
+  // Get unique categories from projectsData
+  const categories = ['All', ...Array.from(new Set(projectsData.map(project => project.category)))];
 
   useEffect(() => {
-    function generateSpans(selector:any) {
+    // Set initial category if none selected
+    if (!selectedCategory) {
+      setSelectedCategory('All');
+    }
+
+    function generateSpans(selector: any) {
+      if (!titleRef.current) return;
       const elements = titleRef.current.querySelectorAll(selector);
 
-      console.log(elements);
-
-      elements.forEach((element:any) => {
+      elements.forEach((element: any) => {
         const text = element.textContent.trim();
         const words = text.split(" ");
 
-        let finalHTML = ""; // Empty span at the beginning
+        let finalHTML = "";
 
-        words.forEach((word:string, index:number) => {
-          finalHTML += "<div>"; // Open a div for each word
+        words.forEach((word: string, index: number) => {
+          finalHTML += "<div>";
           for (let i = 0; i < word.length; i++) {
-            finalHTML += `<span>${word[i]}</span>`; // Wrap each letter in a span
+            finalHTML += `<span>${word[i]}</span>`;
           }
-          finalHTML += "</div>"; // Close the div for each word
+          finalHTML += "</div>";
 
           if (index !== words.length - 1) {
-            finalHTML += "<div><span></span></div>"; // Empty span and a div between words
+            finalHTML += "<div><span></span></div>";
           }
         });
-
-        finalHTML += ""; // Empty span at the end
 
         element.innerHTML = finalHTML;
       });
     }
 
-    function applyHoverEffect(selector:any) {
+    function applyHoverEffect(selector: any) {
+      if (!titleRef.current) return;
       const spans = titleRef.current.querySelectorAll(selector);
 
-      spans.forEach((span:any) => {
+      spans.forEach((span: any) => {
         span.originalScaleY = 1;
         span.addEventListener("mousemove", handleMouseMove);
       });
 
-      function handleMouseMove(e:any) {
+      function handleMouseMove(e: any) {
         const hoveredSpan = e.target;
         const rect = hoveredSpan.getBoundingClientRect();
         const mouseX = e.clientX - rect.left;
@@ -100,12 +109,12 @@ export default function Info() {
         }
       }
 
-      spans.forEach((span:any) => {
+      spans.forEach((span: any) => {
         span.addEventListener("mouseleave", handleMouseLeave);
       });
 
       function handleMouseLeave() {
-        spans.forEach((span:any) => {
+        spans.forEach((span: any) => {
           gsap.to(span, {
             scaleY: span.originalScaleY,
             duration: 0.5,
@@ -117,7 +126,11 @@ export default function Info() {
 
     generateSpans(".height-title .hero-title span");
     applyHoverEffect(".height-title .hero-title span");
-  }, []); // Empty dependency array ensures this effect only runs once after initial render
+  }, [selectedCategory, setSelectedCategory]);
+
+  const handleCategoryClick = (category: string) => {
+    setSelectedCategory(category);
+  };
 
   return (
     <section className="font-poppins md:mb-10 text-secondary md:h-[470px] h-80 relative  overflow-hidden  ">
@@ -140,14 +153,20 @@ export default function Info() {
               imagination, blending seamless functionality with unparalleled
               creativity.
             </span>
-            <div className="flex m-auto md:text-base text-xs font-medium items-center md:justify-center  md:gap-12 gap-5 mt-20 w-full overflow-y-hidden portfolio-menu">
-              <span className="bg-secondary text-primary md:px-10 px-5 py-2 md:py-3 rounded-full">
-                All
-              </span>
-              <span>Graphic Design</span>
-              <span>Branding</span>
-              <span>UI Design</span>
-              <span>Motion Graphics</span>
+            <div className="flex no-scrollbar  m-auto md:text-base text-xs font-medium  items-start md:justify-center md:gap-4 gap-2 mt-20 w-full overflow-y-hidden portfolio-menu p-4">
+              {categories.map((category) => (
+                <span
+                  key={category}
+                  onClick={() => handleCategoryClick(category)}
+                  className={`cursor-pointer transition-all duration-300 hover:text-primary hover:bg-secondary px-5 py-2 md:py-3 rounded-full ${
+                    selectedCategory === category
+                      ? "bg-secondary text-primary"
+                      : ""
+                  }`}
+                >
+                  {category}
+                </span>
+              ))}
             </div>
           </div>
         </div>

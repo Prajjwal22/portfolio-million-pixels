@@ -12,7 +12,6 @@ export default function VerticalSlide({ images }: ImageProps) {
       ...document.querySelectorAll<HTMLElement>(".innerCard"),
     ];
     function animate() {
-      console.log("prajjwal");
       for (let i = 0; i < stickySections.length; i++) {
         let { top } = stickySections[
           i

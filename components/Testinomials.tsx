@@ -2,6 +2,7 @@ import React from "react";
 import EmblaCarousel from "./Carousel";
 import ReviewsData from "../data/testinomials.json";
 import Button from "./Button";
+import Link from "next/link";
 
 export default function Testinomials() {
   const SLIDE_COUNT = 6;
@@ -16,7 +17,10 @@ export default function Testinomials() {
         <div>
           <EmblaCarousel slides={ReviewsData} />
         </div>
-        <Button title="Share Your Experience" variant="outlined" />
+        <Link href="/contact/#feedback">
+          {" "}
+          <Button title="Share Your Experience" variant="outlined" />
+        </Link>
       </div>
     </section>
   );

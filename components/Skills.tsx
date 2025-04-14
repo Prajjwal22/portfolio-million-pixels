@@ -17,7 +17,6 @@ export default function Skills() {
   useEffect(() => {
     setTimeout(() => {
       ScrollTrigger.refresh();
-      console.log("scrolltrigger refresh!");
     }, 1000);
   }, []);
 

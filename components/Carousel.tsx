@@ -32,7 +32,7 @@ type ThumbProps = {
   onClick: () => void;
 };
 
-const EmblaCarousel: React.FC<PropType> = ({ slides, options }: PropType) => {
+const   EmblaCarousel: React.FC<PropType> = ({ slides, options }: PropType) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options);
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
@@ -74,7 +74,7 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }: PropType) => {
       <div className="flex flex-col items-center justify-center">
         <div className="embla-thumbs">
           <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
-            <div className="embla-thumbs__container">
+            <div className="embla-thumbs__container cursor-pointer">
               {slides.map((slide, index) => (
                 <Thumb
                   key={index}

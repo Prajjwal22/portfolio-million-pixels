@@ -10,15 +10,15 @@ export default function Footer() {
         <Image
           className="md:max-w-60 max-w-36 rounded-full"
           src="/khandelwal.png"
-          alt="Vishal"
+          alt="prajjwal"
           width={500}
           height={500}
         />
         <span className="font-semibold text-2xl md:text-3xl">
-          VISHAL KHANDELWAL
+          Vishal Khandelwal
         </span>
-        <span className="md:text-lg font-medium">Digital Designer</span>
-        <span className="md:text-lg font-medium">vishal1993kh1@gmail.com</span>
+        <span className="md:text-lg font-medium">Digital Designer & Developer</span>
+        <span className="md:text-lg font-medium">prajjwalhts@gmail.com</span>
         <div className="md:flex gap-5 hidden">
           <Button icon="/download.png" title="Download CV" variant="outline" />
           <Button
@@ -32,8 +32,21 @@ export default function Footer() {
           <Button title="Download Portfolio" variant="outlined" />
         </div>
         <div className="text-sm md:text-lg flex gap-7">
-        <Link href="https://www.behance.net/vishal1993ce3e?log_shim_removal=1"> <span>Behance</span></Link> |  <Link href="http://www.linkedin.com/in/vishal-khandelwal-150216124/"><span>Linkedin</span></Link>|   <Link href="http://www.instagram.com/vishal_khandelwal93/"><span>Instagram</span></Link>
+          <Link href="#">
+            {" "}
+            <span>Behance</span>
+          </Link>{" "}
+          |{" "}
+          <Link href="https://www.linkedin.com/in/prajjwalhts/">
+            <span>Linkedin</span>
+          </Link>
+          |{" "}
+          <Link href="https://www.instagram.com/_prajjwal.hts/">
+            <span>Instagram</span>
+          </Link>
         </div>
+      <span className="text-muted text-xs">Crafted with ❤️ by Prajjwal</span>
+
       </div>
     </section>
   );

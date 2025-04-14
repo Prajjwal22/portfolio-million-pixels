@@ -20,7 +20,6 @@ export default function Carousel({ images }: ImageProps) {
   useEffect(() => {
     setTimeout(() => {
       ScrollTrigger.refresh();
-      console.log("scrolltrigger refresh!");
     }, 1000);
   }, []);
   useGSAP(

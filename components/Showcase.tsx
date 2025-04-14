@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import Button from "./Button";
+import projectsData from "@/data/showcasedata.json";
 
 export default function Showcase() {
   useEffect(() => {
@@ -10,7 +11,6 @@ export default function Showcase() {
       ...document.querySelectorAll<HTMLElement>(".innerCard"),
     ];
     function animate() {
-      console.log("prajjwal");
       for (let i = 0; i < stickySections.length; i++) {
         let { top } = stickySections[
           i
@@ -41,26 +41,16 @@ export default function Showcase() {
           Creative Showcase
         </h2>
         <div className="h-[500vh] bg-primary">
-          <div className="relative h-[200vh] w-full sectionDiv">
-            <div className="innerCard sticky w-full h-screen top-0 p-3 md:p-10 will-change-filter">
-              <ProjectCard title="Graphic Design" image="/work.png" />
+          {projectsData.slice(0, 4).map((project, index) => (
+            <div
+              key={project.id}
+              className="relative h-[200vh] w-full sectionDiv"
+            >
+              <div className="innerCard sticky w-full h-screen top-0 md:p-10 will-change-filter">
+                <ProjectCard title={project.title} image={project.image} />
+              </div>
             </div>
-          </div>
-          <div className="relative h-[200vh] w-full sectionDiv">
-            <div className="innerCard sticky w-full h-screen top-0 md:p-10 will-change-filter">
-              <ProjectCard title="Motion Designing" image="/work2.png" />
-            </div>
-          </div>
-          <div className="relative h-[200vh] w-full sectionDiv">
-            <div className="innerCard sticky w-full h-screen top-0 md:p-10 will-change-filter">
-              <ProjectCard title="UI Work" image="/work2.png" />
-            </div>
-          </div>
-          <div className="relative h-[200vh] w-full sectionDiv">
-            <div className="innerCard sticky w-full h-screen top-0 md:p-10 will-change-filter">
-              <ProjectCard title="Character Designing" image="/work2.png" />
-            </div>
-          </div>
+          ))}
         </div>
         <div className="m-auto">
           <Button title="Download Porfolio " variant="outlined" />

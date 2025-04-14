@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "image": "/projects/1.webp",
+    "category": "UI Design",
+    "title": "Mobile Banking App",
+    "description": "A modern mobile banking application designed with user experience at its core. The app features intuitive navigation, secure transaction flows, and real-time account management capabilities.",
+    "client": "FinTech Solutions Inc.",
+    "services": ["UI Design", "UX Research", "Prototyping", "User Testing"],
+    "date": "2024",
+    "link": "https://example.com/banking-app"
+  },
+  {
+    "id": 2,
+    "image": "/projects/2.webp",
+    "category": "UI Design",
+    "title": "Social Media Dashboard",
+    "description": "Comprehensive social media management dashboard that allows users to monitor, analyze, and engage with their social media presence across multiple platforms.",
+    "client": "SocialPro",
+    "services": ["UI Design", "Data Visualization", "Responsive Design"],
+    "date": "2023",
+    "link": "https://example.com/social-dashboard"
+  },
+  {
+    "id": 3,
+    "image": "/projects/3.webp",
+    "category": "UI Design",
+    "title": "E-commerce Platform",
+    "description": "A full-featured e-commerce platform with a focus on mobile-first design, seamless checkout process, and personalized shopping experiences.",
+    "client": "ShopEase",
+    "services": ["UI Design", "E-commerce", "Payment Integration"],
+    "date": "2024"
+  },
+  {
+    "id": 4,
+    "image": "/projects/4.webp",
+    "category": "Branding",
+    "title": "Tech Startup Identity",
+    "description": "Complete brand identity design for a technology startup, including logo design, color palette, typography, and brand guidelines.",
+    "client": "TechVision",
+    "services": ["Brand Strategy", "Logo Design", "Brand Guidelines"],
+    "date": "2023"
+  },
+  {
+    "id": 5,
+    "image": "/projects/5.webp",
+    "category": "Branding",
+    "title": "Restaurant Rebranding",
+    "description": "A comprehensive rebranding project for a modern restaurant chain, focusing on creating a fresh, appealing visual identity that reflects their culinary excellence.",
+    "client": "Fusion Bites",
+    "services": ["Rebranding", "Print Design", "Packaging"],
+    "date": "2024"
+  },
+  {
+    "id": 6,
+    "image": "/projects/1.webp",
+    "category": "Branding",
+    "title": "Fashion Brand Identity",
+    "description": "Brand identity design for a sustainable fashion brand, emphasizing eco-friendly values and modern aesthetics.",
+    "client": "EcoStyle",
+    "services": ["Brand Identity", "Packaging Design", "Marketing Materials"],
+    "date": "2023"
+  },
+  {
+    "id": 7,
+    "image": "/projects/2.webp",
+    "category": "Motion Graphics",
+    "title": "Product Launch Video",
+    "description": "Engaging motion graphics video for a new product launch, combining 2D animation with dynamic typography and visual effects.",
+    "client": "InnovateTech",
+    "services": ["Motion Design", "Animation", "Video Editing"],
+    "date": "2024"
+  },
+  {
+    "id": 8,
+    "image": "/projects/3.webp",
+    "category": "Motion Graphics",
+    "title": "App Promo Animation",
+    "description": "Animated promotional video showcasing app features and benefits through engaging motion graphics and storytelling.",
+    "client": "AppWorks",
+    "services": ["Motion Graphics", "Character Animation", "Sound Design"],
+    "date": "2023"
+  },
+  {
+    "id": 9,
+    "image": "/projects/4.webp",
+    "category": "Motion Graphics",
+    "title": "Brand Story Animation",
+    "description": "Animated brand story video that brings the company's journey and values to life through creative motion graphics.",
+    "client": "BrandCraft",
+    "services": ["Storyboarding", "Animation", "Visual Effects"],
+    "date": "2024"
+  },
+  {
+    "id": 10,
+    "image": "/projects/5.webp",
+    "category": "Graphic Design",
+    "title": "Event Poster Series",
+    "description": "Series of visually striking posters for a cultural events program, featuring bold typography and innovative layouts.",
+    "client": "CultureFest",
+    "services": ["Poster Design", "Typography", "Print Design"],
+    "date": "2023"
+  },
+  {
+    "id": 11,
+    "image": "/projects/1.webp",
+    "category": "Graphic Design",
+    "title": "Annual Report Design",
+    "description": "Creative annual report design that transforms complex data into visually engaging stories through infographics and layouts.",
+    "client": "Corporate Inc.",
+    "services": ["Publication Design", "Data Visualization", "Layout Design"],
+    "date": "2024"
+  },
+  {
+    "id": 12,
+    "image": "/projects/2.webp",
+    "category": "Graphic Design",
+    "title": "Marketing Collateral",
+    "description": "Comprehensive set of marketing materials designed to maintain brand consistency across various touchpoints.",
+    "client": "MarketPro",
+    "services": ["Print Design", "Digital Design", "Brand Consistency"],
+    "date": "2023"
+  }
+]

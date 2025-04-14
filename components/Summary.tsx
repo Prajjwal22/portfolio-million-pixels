@@ -26,7 +26,7 @@ export default function Summary() {
         </h2>
         <div className="relative">
           <div className="flex justify-between items-center ">
-            <span className="absolute md:hidden bottom-0 w-screen -left-2 h-0.5 bg-mute"></span>
+            <span className="absolute md:hidden bottom-0 w-full  h-0.5 bg-mute"></span>
             <span className="md:h-16 flex md:text-xl text-sm items-center justify-center md:w-52 h-10 w-28 rounded-full bg-primary text-secondary">
               Experience
             </span>
@@ -42,7 +42,7 @@ export default function Summary() {
         </div>
         <div className="relative">
           <div className="flex justify-between items-center ">
-            <span className="absolute md:hidden bottom-0 w-screen -left-2 h-0.5 bg-mute"></span>
+            <span className="absolute md:hidden bottom-0 w-full  h-0.5 bg-mute"></span>
 
             <span className="md:h-16 flex md:text-xl text-sm items-center justify-center md:w-52 h-10 w-28 rounded-full bg-primary text-secondary">
               Education
