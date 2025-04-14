@@ -103,7 +103,7 @@ export default function Details() {
             </span>
           </div>
         </div>
-        <div className="flex flex-col items-start max-w-6xl m-auto">
+        <div className="flex flex-col items-start max-w-6xl m-auto mb-5">
           <span className="font-bold text-lg mb-5">
             Integration of Social Media:
           </span>
